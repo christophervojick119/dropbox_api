@@ -6,6 +6,8 @@ require 'faraday'
 
 require 'dropbox_api/authenticator'
 
+require 'dropbox_api/chunked_uploader'
+
 require 'dropbox_api/middleware/decode_result'
 require 'dropbox_api/middleware/stack'
 

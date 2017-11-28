@@ -33,6 +33,7 @@ module DropboxApi::Errors
   class CantMoveFolderIntoItselfError < BasicError; end
   class CantNestSharedFolderError < BasicError; end
   class CantShareOutsideTeamError < BasicError; end
+  class ChunkedUploaderError < BasicError; end
   class ContainsSharedFolderError < BasicError; end
   class CursorClosedError < BasicError; end
   class CursorNotClosedError < BasicError; end
