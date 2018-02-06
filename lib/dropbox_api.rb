@@ -122,6 +122,7 @@ require 'dropbox_api/connection_builder'
 
 require 'dropbox_api/endpoints/base'
 require 'dropbox_api/endpoints/rpc'
+require 'dropbox_api/endpoints/rpc_content'
 require 'dropbox_api/endpoints/rpc_notify'
 require 'dropbox_api/endpoints/content_download'
 require 'dropbox_api/endpoints/content_upload'
