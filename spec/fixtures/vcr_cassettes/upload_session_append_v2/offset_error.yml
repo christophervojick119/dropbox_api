@@ -10,11 +10,13 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Dropbox-Api-Arg:
       - "{}"
       Content-Type:
       - application/octet-stream
+      Content-Length:
+      - '9'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +29,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 06 May 2017 07:41:36 GMT
+      - Tue, 13 Feb 2018 21:17:48 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,16 +43,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '261'
+      - '541'
       X-Dropbox-Request-Id:
-      - 2ee35f69681cfa97ec1ee32d657c9cc6
+      - 13abcdddf99a83c646d5853612b764ed
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
-      string: '{"session_id": "AAAAAAAABFOKUJSkyCuajQ"}'
-    http_version:
-  recorded_at: Sat, 06 May 2017 07:41:38 GMT
+      string: '{"session_id": "AAAAAAAAADdPKrdP-zZNFQ"}'
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 21:17:48 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/append_v2
@@ -61,11 +63,13 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAABFOKUJSkyCuajQ","offset":42}}'
+      - '{"cursor":{"session_id":"AAAAAAAAADdPKrdP-zZNFQ","offset":42}}'
       Content-Type:
       - application/octet-stream
+      Content-Length:
+      - '14'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -78,7 +82,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 06 May 2017 07:41:37 GMT
+      - Tue, 13 Feb 2018 21:17:49 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -86,13 +90,13 @@ http_interactions:
       Connection:
       - keep-alive
       X-Dropbox-Request-Id:
-      - 72fc8123808cd532de3e2c88e6c0a65d
+      - 1cdb2b54516bb9a50995a710cba2ce99
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: UTF-8
       string: '{"error_summary": "incorrect_offset/..", "error": {".tag": "incorrect_offset",
         "correct_offset": 9}}'
-    http_version:
-  recorded_at: Sat, 06 May 2017 07:41:39 GMT
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 21:17:49 GMT
 recorded_with: VCR 3.0.3

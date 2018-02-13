@@ -10,7 +10,7 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 09 Jul 2017 10:27:54 GMT
+      - Tue, 13 Feb 2018 21:16:58 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -40,22 +40,20 @@ http_interactions:
       - no-cache
       X-Content-Type-Options:
       - nosniff
-      X-Dropbox-Http-Protocol:
-      - None
       X-Dropbox-Request-Id:
-      - 9989eb028f8ed0a79743c48d62bcfd66
+      - a2e15f241ca9a28846319ca4ea24f9ed
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '112'
+      - '220'
     body:
       encoding: ASCII-8BIT
       string: '{".tag": "file", "name": "file.txt", "path_lower": "/dropbox_api_fixtures/upload/file.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAADQ",
-        "client_modified": "2017-07-09T10:23:25Z", "server_modified": "2017-07-09T10:23:25Z",
-        "rev": "13576c68d6", "size": 13, "content_hash": "6e50b8ff301198b6715ed02ece1ff8a9983c6e9aa71bc561e14e2c514d7868cd"}'
+        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAlQ",
+        "client_modified": "2018-02-13T21:16:57Z", "server_modified": "2018-02-13T21:16:57Z",
+        "rev": "119576c68d6", "size": 13, "content_hash": "6e50b8ff301198b6715ed02ece1ff8a9983c6e9aa71bc561e14e2c514d7868cd"}'
     http_version: 
-  recorded_at: Sun, 09 Jul 2017 10:27:54 GMT
+  recorded_at: Tue, 13 Feb 2018 21:16:58 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -66,11 +64,13 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"autorename":true,"mode":{".tag":"update","update":"13576c68d6"},"path":"/dropbox_api_fixtures/upload/file.txt"}'
+      - '{"autorename":true,"mode":{".tag":"update","update":"119576c68d6"},"path":"/dropbox_api_fixtures/upload/file.txt"}'
       Content-Type:
       - application/octet-stream
+      Content-Length:
+      - '14'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -83,7 +83,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 09 Jul 2017 10:27:56 GMT
+      - Tue, 13 Feb 2018 21:16:59 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -97,17 +97,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '619'
+      - '890'
       X-Dropbox-Request-Id:
-      - 37e286b6d4aaf7a2286180a248908317
+      - '0393853e4878f59016f61840adb06af9'
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: '{"name": "file.txt", "path_lower": "/dropbox_api_fixtures/upload/file.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAADQ",
-        "client_modified": "2017-07-09T10:27:55Z", "server_modified": "2017-07-09T10:27:56Z",
-        "rev": "16576c68d6", "size": 14, "content_hash": "a08cf7310b48da5822f42a39be4eebff13aff979b316bccc7da309ad6f00dd74"}'
+        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAlQ",
+        "client_modified": "2018-02-13T21:16:59Z", "server_modified": "2018-02-13T21:16:59Z",
+        "rev": "11a576c68d6", "size": 14, "content_hash": "a08cf7310b48da5822f42a39be4eebff13aff979b316bccc7da309ad6f00dd74"}'
     http_version: 
-  recorded_at: Sun, 09 Jul 2017 10:27:56 GMT
+  recorded_at: Tue, 13 Feb 2018 21:16:59 GMT
 recorded_with: VCR 3.0.3

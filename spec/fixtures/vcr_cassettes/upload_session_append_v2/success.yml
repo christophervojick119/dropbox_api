@@ -15,6 +15,8 @@ http_interactions:
       - "{}"
       Content-Type:
       - application/octet-stream
+      Content-Length:
+      - '9'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +29,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 20 Jun 2017 23:16:24 GMT
+      - Tue, 13 Feb 2018 21:17:45 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,16 +43,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '270'
+      - '438'
       X-Dropbox-Request-Id:
-      - 35f0b9314f31e404fbbd9908e52fe763
+      - f9b78b2bba0488a42ca0ee064f8600ea
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
-      string: '{"session_id": "AAAAAAAAF15DUkd3feKuMA"}'
+      string: '{"session_id": "AAAAAAAAADauiQ0frc9xHg"}'
     http_version: 
-  recorded_at: Tue, 20 Jun 2017 23:16:25 GMT
+  recorded_at: Tue, 13 Feb 2018 21:17:45 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/append_v2
@@ -63,9 +65,11 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAAF15DUkd3feKuMA","offset":9}}'
+      - '{"cursor":{"session_id":"AAAAAAAAADauiQ0frc9xHg","offset":9}}'
       Content-Type:
       - application/octet-stream
+      Content-Length:
+      - '13'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -78,7 +82,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 20 Jun 2017 23:16:26 GMT
+      - Tue, 13 Feb 2018 21:17:46 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -92,16 +96,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '367'
+      - '365'
       X-Dropbox-Request-Id:
-      - f252c67365bbb23e1fc911680b6d391b
+      - 8f70becc631fa970c587089b5eebf1bf
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: 'null'
     http_version: 
-  recorded_at: Tue, 20 Jun 2017 23:16:26 GMT
+  recorded_at: Tue, 13 Feb 2018 21:17:46 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/finish
@@ -114,7 +118,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAAF15DUkd3feKuMA","offset":22},"commit":{"path":"/target.txt","mode":{".tag":"add"}}}'
+      - '{"cursor":{"session_id":"AAAAAAAAADauiQ0frc9xHg","offset":22},"commit":{"path":"/target.txt","mode":{".tag":"add"}}}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -131,7 +135,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 20 Jun 2017 23:16:27 GMT
+      - Tue, 13 Feb 2018 21:17:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -145,17 +149,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '652'
+      - '844'
       X-Dropbox-Request-Id:
-      - 86a9fbfb2899b0be3ac68875480ff0d7
+      - 578f12e060f87ab3844eb4016213e767
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: '{"name": "target.txt", "path_lower": "/target.txt", "path_display":
-        "/target.txt", "id": "id:QKdce33OfLAAAAAAAAAAFw", "client_modified": "2017-06-20T23:16:27Z",
-        "server_modified": "2017-06-20T23:16:27Z", "rev": "1f58ebb611", "size": 22,
+        "/target.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAng", "client_modified": "2018-02-13T21:17:47Z",
+        "server_modified": "2018-02-13T21:17:47Z", "rev": "122576c68d6", "size": 22,
         "content_hash": "2064faa877255c7097e19c8ce5daada411478d0bfb8ed57837eeaa53bd4a10b3"}'
     http_version: 
-  recorded_at: Tue, 20 Jun 2017 23:16:28 GMT
+  recorded_at: Tue, 13 Feb 2018 21:17:47 GMT
 recorded_with: VCR 3.0.3
