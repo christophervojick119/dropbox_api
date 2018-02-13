@@ -5,7 +5,7 @@ http_interactions:
     uri: https://content.dropboxapi.com/2/files/get_thumbnail_batch
     body:
       encoding: UTF-8
-      string: '{"entries":[{"format":"jpeg","size":"w64h64","mode":"strict","path":"/unknown_file.jpg"}]}'
+      string: '{"entries":[{"format":"jpeg","size":"w64h64","mode":"strict","path":"/dropbox_api_fixtures/get_thumbnail_batch/unknown_file.jpg"}]}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 06 Feb 2018 06:23:26 GMT
+      - Tue, 13 Feb 2018 05:02:16 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -39,9 +39,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '239'
+      - '229'
       X-Dropbox-Request-Id:
-      - bce280ed30bc160192badc7cbabcea51
+      - 30270e40fb9c995c6effe8a74a5ed4ec
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
@@ -49,5 +49,5 @@ http_interactions:
       string: '{"entries": [{".tag": "failure", "failure": {".tag": "path", "path":
         {".tag": "not_found"}}}]}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 06:23:26 GMT
+  recorded_at: Tue, 13 Feb 2018 05:02:16 GMT
 recorded_with: VCR 4.0.0
