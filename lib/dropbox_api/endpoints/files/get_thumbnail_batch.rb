@@ -9,7 +9,7 @@ module DropboxApi::Endpoints::Files
 
     # Get a thumbnails for a batch of images.
     #
-    # @param paths [Array] The paths to the image files you want thumbnails for.
+    # @param paths [Array<String>] The paths to the image files you want thumbnails for.
     # @option options format [:jpeg, :png] The format for the thumbnail image,
     #   +:jpeg+ (default) or +:png+. For images that are photos, +:jpeg+ should be
     #   preferred, while png is better for screenshots and digital arts. The
