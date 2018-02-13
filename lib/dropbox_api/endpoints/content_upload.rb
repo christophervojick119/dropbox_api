@@ -14,7 +14,9 @@ module DropboxApi::Endpoints
         'Dropbox-API-Arg' => JSON.dump(params),
         'Content-Type' => 'application/octet-stream'
       }
-      if body.respond_to?(:length)
+      if body.respond_to?(:bytesize)
+        headers['Content-Length'] = body.bytesize.to_s
+      elsif body.respond_to?(:length)
         headers['Content-Length'] = body.length.to_s
       elsif body.respond_to?(:stat)
         headers['Content-Length'] = body.stat.size.to_s
