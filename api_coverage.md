@@ -103,6 +103,15 @@ API call | Status
 `/get_current_account` | 🌕
 `/get_space_usage` | 🌕
 
+## File Requests namespace
+
+API call | Status
+--- | :---:
+`/create` | 🌕
+`/get` | 🌑
+`/list` | 🌑
+`/update` | 🌑
+
 
 ## Dropbox Business API
 Unfortunately, none of the Dropbox Business endpoints have been implemented.
