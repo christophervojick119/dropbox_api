@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/sharing/list_file_members
+    body:
+      encoding: UTF-8
+      string: '{"limit":100,"file":"1231273663","actions":["remove","make_owner"]}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 22 Oct 2016 09:45:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '381'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - gvc=MTA3NjI3NDI2MTEwMDY1NTI4NjQzMTQyNzM1ODQ0NzE3Mzg5ODMw; expires=Thu, 21
+        Oct 2021 09:45:24 GMT; httponly; Path=/; secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Dropbox-Request-Id:
+      - 3a270b2354695f095cdf3ef04f4ad958
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Server-Response-Time:
+      - '154'
+    body:
+      encoding: UTF-8
+      string: '
+      {
+        "users": [{
+          "access_type": {".tag": "owner"},
+          "permissions": [
+            {"action": {".tag": "remove"},     "allow": false, "reason": {".tag": "target_is_self"}},
+            {"action": {".tag": "make_owner"}, "allow": false, "reason": {".tag": "target_is_self"}}
+          ],
+          "is_inherited": false,
+          "user": {"account_id": "dbid:AAAKVPLEKkkccsZMFkkZNXFeyXrPPhrtFxs",
+            "same_team": false
+          }
+        }],
+        "groups": [],
+        "invitees": []
+      }'
+    http_version:
+  recorded_at: Sat, 22 Oct 2016 09:45:24 GMT
+recorded_with: VCR 3.0.1

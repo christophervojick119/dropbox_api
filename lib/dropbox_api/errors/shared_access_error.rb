@@ -1,5 +1,5 @@
 module DropboxApi::Errors
-  class SharedFolderAccessError < BasicError
+  class SharedAccessError < BasicError
     ErrorSubtypes = {
       :invalid_id => InvalidIdError,
       :not_a_member => NotAMemberError,
