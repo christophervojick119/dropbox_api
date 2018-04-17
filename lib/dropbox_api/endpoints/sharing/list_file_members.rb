@@ -24,10 +24,13 @@ module DropboxApi::Endpoints::Sharing
     # @option options limit [Numeric] The maximum number of results that
     #   include members, groups and invitees to return per request. The default
     #   for this field is 100.
+    # @option options include_inherited [Boolean] Whether to include members
+    #   who only have access from a parent shared folder. The default for this field is True.
     # @return [SharedMembers] Shared file user and group membership.
     # @see Metadata::MemberActionList
     add_endpoint :list_file_members do |file_id, actions = [], options = {}|
       validate_options([:limit], options)
+      validate_options([:include_inherited], options)
       options[:limit] ||= 100
 
       perform_request options.merge({
