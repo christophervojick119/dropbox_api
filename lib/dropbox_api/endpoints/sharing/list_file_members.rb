@@ -29,8 +29,7 @@ module DropboxApi::Endpoints::Sharing
     # @return [SharedMembers] Shared file user and group membership.
     # @see Metadata::MemberActionList
     add_endpoint :list_file_members do |file_id, actions = [], options = {}|
-      validate_options([:limit], options)
-      validate_options([:include_inherited], options)
+      validate_options([:limit, :include_inherited], options)
       options[:limit] ||= 100
 
       perform_request options.merge({
