@@ -2,8 +2,8 @@ module DropboxApi::Endpoints::Sharing
   class ListFolderMembers < DropboxApi::Endpoints::Rpc
     Method      = :post
     Path        = "/2/sharing/list_folder_members".freeze
-    ResultType  = DropboxApi::Results::SharedMembers
-    ErrorType   = DropboxApi::Errors::SharedAccessError
+    ResultType  = DropboxApi::Results::SharedFolderMembers
+    ErrorType   = DropboxApi::Errors::SharedFolderAccessError
 
     include DropboxApi::Endpoints::OptionsValidator
 
@@ -24,7 +24,7 @@ module DropboxApi::Endpoints::Sharing
     # @option options limit [Numeric] The maximum number of results that
     #   include members, groups and invitees to return per request. The default
     #   for this field is 1000.
-    # @return [SharedMembers] Shared folder user and group membership.
+    # @return [SharedFolderMembers] Shared folder user and group membership.
     # @see Metadata::MemberActionList
     add_endpoint :list_folder_members do |folder_id, actions = [], options = {}|
       validate_options([:limit], options)

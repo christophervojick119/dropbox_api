@@ -1,5 +1,5 @@
 module DropboxApi::Results
-  class SharedMembers < DropboxApi::Results::Base
+  class SharedFileMembers < DropboxApi::Results::Base
     def users
       @data["users"]
     end

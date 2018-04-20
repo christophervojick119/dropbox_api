@@ -1,7 +1,7 @@
 module DropboxApi::Errors
   class AddFolderMemberError < BasicError
     ErrorSubtypes = {
-      :access_error => SharedAccessError,
+      :access_error => SharedFolderAccessError,
       :email_unverified => EmailUnverifiedError,
       :bad_member => AddMemberSelectorError,
       :cant_share_outside_team => CantShareOutsideTeamError,

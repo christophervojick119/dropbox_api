@@ -2,8 +2,8 @@ module DropboxApi::Endpoints::Sharing
   class ListFileMembers < DropboxApi::Endpoints::Rpc
     Method      = :post
     Path        = "/2/sharing/list_file_members".freeze
-    ResultType  = DropboxApi::Results::SharedMembers
-    ErrorType   = DropboxApi::Errors::SharedAccessError
+    ResultType  = DropboxApi::Results::SharedFileMembers
+    ErrorType   = DropboxApi::Errors::SharingFileAccessError
 
     include DropboxApi::Endpoints::OptionsValidator
 
@@ -26,7 +26,7 @@ module DropboxApi::Endpoints::Sharing
     #   for this field is 100.
     # @option options include_inherited [Boolean] Whether to include members
     #   who only have access from a parent shared folder. The default for this field is True.
-    # @return [SharedMembers] Shared file user and group membership.
+    # @return [SharedFileMembers] Shared file user and group membership.
     # @see Metadata::MemberActionList
     add_endpoint :list_file_members do |file_id, actions = [], options = {}|
       validate_options([:limit, :include_inherited], options)
