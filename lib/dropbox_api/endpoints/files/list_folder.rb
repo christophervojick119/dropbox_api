@@ -23,6 +23,7 @@ module DropboxApi::Endpoints::Files
         :recursive,
         :include_media_info,
         :include_deleted,
+        :shared_link,
         :include_has_explicit_shared_members
       ], options)
       options[:recursive] ||= false
