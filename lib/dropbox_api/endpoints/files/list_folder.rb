@@ -29,10 +29,24 @@ module DropboxApi::Endpoints::Files
       options[:recursive] ||= false
       options[:include_media_info] ||= false
       options[:include_deleted] ||= false
+      options[:shared_link] = build_shared_link_param(options[:shared_link]) if options[:shared_link]
 
       perform_request options.merge({
         :path => path
       })
+    end
+
+    private
+
+    def build_shared_link_param(shared_link_param)
+      case shared_link_param
+      when String, Symbol
+        DropboxApi::Metadata::SharedLink.new shared_link_param
+      when DropboxApi::Metadata::SharedLink
+        shared_link_param
+      else
+        raise ArgumentError, "Invalid `shared_link`: #{shared_link.inspect}"
+      end.to_hash
     end
   end
 end

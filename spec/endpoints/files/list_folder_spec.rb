@@ -1,4 +1,5 @@
 describe DropboxApi::Client, "#list_folder" do
+  let(:path_prefix) { DropboxScaffoldBuilder.prefix_for :list_folder }
   before :each do
     @client = DropboxApi::Client.new
   end
@@ -21,6 +22,16 @@ describe DropboxApi::Client, "#list_folder" do
     result.entries.each do |resource|
       expect(resource).to be_a(DropboxApi::Metadata::Base)
     end
+  end
+
+  it "lists entries in shared folder if given", :cassette => "list_folder/success_shared_folder" do
+    result = @client.list_shared_links(:path => "#{path_prefix}/shared_folder")
+    result = @client.list_folder "", shared_link: result.links.first.url
+
+    result.entries.each do |resource|
+      expect(resource).to be_a(DropboxApi::Metadata::Base)
+    end
+    expect(result.entries.map(&:name).inspect).to include("cow.txt")
   end
 
   it "raises an argument error with invalid options" do

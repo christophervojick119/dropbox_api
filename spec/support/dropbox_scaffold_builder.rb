@@ -60,7 +60,9 @@ class DropboxScaffoldBuilder
   end
 
   def build_list_folder
-    # No need to set up anything
+    client.create_folder("#{path_prefix}/shared_folder")
+    client.create_shared_link_with_settings("#{path_prefix}/shared_folder")
+    client.upload("#{path_prefix}/shared_folder/cow.txt", "Moo.")
   end
 
   def build_upload

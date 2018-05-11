@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/sharing/list_shared_links
+    body:
+      encoding: UTF-8
+      string: '{"path":"/dropbox_api_fixtures/list_folder/shared_folder"}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 11 May 2018 16:29:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Dropbox-Request-Id:
+      - 9465d9a358fe3481ea1dd4e86e82bcaa
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Server-Response-Time:
+      - '558'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"links": [{".tag": "folder", "url": "https://www.dropbox.com/sh/11zmten5htl4v8h/AADZuLhttEDjpsDE_TifuATga?dl=0",
+        "id": "id:iWFsGCmi1sAAAAAAAAAAvA", "name": "shared_folder", "path_lower":
+        "/dropbox_api_fixtures/list_folder/shared_folder", "link_permissions": {"resolved_visibility":
+        {".tag": "public"}, "requested_visibility": {".tag": "public"}, "can_revoke":
+        true}}], "has_more": false}'
+    http_version: 
+  recorded_at: Fri, 11 May 2018 16:29:50 GMT
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/files/list_folder
+    body:
+      encoding: UTF-8
+      string: '{"shared_link":{"url":"https://www.dropbox.com/sh/11zmten5htl4v8h/AADZuLhttEDjpsDE_TifuATga?dl=0"},"recursive":false,"include_media_info":false,"include_deleted":false,"path":""}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 11 May 2018 16:29:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Dropbox-Request-Id:
+      - 4aa39fb3b34529c543cf408b5f47ce0d
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Server-Response-Time:
+      - '311'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entries": [{".tag": "file", "name": "cow.txt", "path_lower": "/dropbox_api_fixtures/list_folder/shared_folder/cow.txt",
+        "path_display": "/dropbox_api_fixtures/list_folder/shared_folder/cow.txt",
+        "id": "id:iWFsGCmi1sAAAAAAAAAAvQ", "client_modified": "2018-05-11T16:27:17Z",
+        "server_modified": "2018-05-11T16:27:17Z", "rev": "13c576c68d6", "size": 4,
+        "content_hash": "ddc458cb9f13e2e9f4b02a579cc752c8bbcbb7fdfd4c54faea8e98b7f4b80ea8"}],
+        "cursor": "AAGAl6JkZOinJ4foJqaZmKSvmnPEo9BO3tk2ei4OxEMqIolp1Ou6x7Hu0ozx4nTdQbK95eqs3_URYAFRIipTuZ8aZbjfQQrGJY9Tm5A24J_mG-hl1JdVwQ8oqT__ykuSJG4CYzNnd_ZnkLbdG7NYvV_9qojzOQlPVTJ_L6Mxb5a09njJk5ZYJHbmxvEYixsCWpmkROUc3YYLIWZ9S2TrhLqYjG47TC6SNjgFaog_QyntY1oPnI_vRy8L5XOYu0zD5TznohbKOi89gjBl-f_0ELS-ePIFbL4PgWDgZ1zch4c8m8491GlgEtIblHU83aBN7TWsKdDMA8Fj7sGFeL3WuaeO",
+        "has_more": false}'
+    http_version: 
+  recorded_at: Fri, 11 May 2018 16:29:51 GMT
+recorded_with: VCR 3.0.3

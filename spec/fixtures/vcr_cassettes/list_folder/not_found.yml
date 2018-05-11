@@ -10,7 +10,7 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,19 +25,27 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 09 Jul 2017 09:29:37 GMT
+      - Fri, 11 May 2018 16:29:48 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Content-Security-Policy:
+      - sandbox; frame-ancestors 'none'
       X-Dropbox-Request-Id:
-      - 7a6691e6269a7c0a6727ccce0288983a
+      - 3f59c6b27e4fd561b310867c580b3ffd
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Content-Disposition:
+      - attachment; filename='error'
     body:
       encoding: UTF-8
-      string: '{"error_summary": "path/not_found/.", "error": {".tag": "path", "path":
+      string: '{"error_summary": "path/not_found/", "error": {".tag": "path", "path":
         {".tag": "not_found"}}}'
     http_version: 
-  recorded_at: Sun, 09 Jul 2017 09:29:37 GMT
+  recorded_at: Fri, 11 May 2018 16:29:49 GMT
 recorded_with: VCR 3.0.3

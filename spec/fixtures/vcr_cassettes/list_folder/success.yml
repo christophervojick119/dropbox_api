@@ -10,7 +10,7 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.11.0
+      - Faraday v0.12.1
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 09 Jul 2017 09:29:37 GMT
+      - Fri, 11 May 2018 16:29:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -40,61 +40,53 @@ http_interactions:
       - no-cache
       X-Content-Type-Options:
       - nosniff
-      X-Dropbox-Http-Protocol:
-      - None
       X-Dropbox-Request-Id:
-      - c0165dbb3d6e5b6ec40ef502912e1b2e
+      - f86d0eb73307af8b8bf182d1de49d515
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '209'
+      - '332'
     body:
       encoding: ASCII-8BIT
-      string: '{"entries": [{".tag": "folder", "name": "not_found", "path_lower":
-        "/not_found", "path_display": "/not_found", "id": "id:evvfE6q6cK0AAAAAAAAFHA"},
-        {".tag": "folder", "name": "Homework", "path_lower": "/homework", "path_display":
-        "/Homework", "id": "id:evvfE6q6cK0AAAAAAAAFKA"}, {".tag": "folder", "name":
-        "dropbox_api_fixtures", "path_lower": "/dropbox_api_fixtures", "path_display":
-        "/dropbox_api_fixtures", "id": "id:evvfE6q6cK0AAAAAAAAFLA"}, {".tag": "folder",
-        "name": "Orders (dev)", "path_lower": "/orders (dev)", "path_display": "/Orders
-        (dev)", "id": "id:evvfE6q6cK0AAAAAAAAFSw"}, {".tag": "file", "name": "bsd.pdf",
-        "path_lower": "/bsd.pdf", "path_display": "/bsd.pdf", "id": "id:XjvW7ncTHSAAAAAAAAAAAQ",
-        "client_modified": "2016-05-22T09:28:05Z", "server_modified": "2016-05-22T09:28:06Z",
-        "rev": "2c424061bdd", "size": 701667, "content_hash": "cffcc53c7e7a806869304082a0bb3a22bfff7b78cb421a66fd8273f0d279c8ee"},
-        {".tag": "file", "name": "image.png", "path_lower": "/image.png", "path_display":
-        "/image.png", "id": "id:jVVdzRI3CnAAAAAAAAAAAQ", "client_modified": "2016-05-22T09:29:22Z",
-        "server_modified": "2016-06-04T08:36:02Z", "rev": "1a4524061bdd", "size":
-        77019, "content_hash": "05b4fc1beab6e62964865964acc57a5ec3dd8b9832aa155d41b808083a357208"},
+      string: '{"entries": [{".tag": "folder", "name": "dropbox_api_fixtures", "path_lower":
+        "/dropbox_api_fixtures", "path_display": "/dropbox_api_fixtures", "id": "id:iWFsGCmi1sAAAAAAAAAABA"},
+        {".tag": "folder", "name": "orders (dev)", "path_lower": "/orders (dev)",
+        "path_display": "/orders (dev)", "id": "id:iWFsGCmi1sAAAAAAAAAAdQ"}, {".tag":
+        "folder", "name": "Homework", "path_lower": "/homework", "path_display": "/Homework",
+        "id": "id:iWFsGCmi1sAAAAAAAAAAoA"}, {".tag": "folder", "name": "Chicken Bones",
+        "path_lower": "/chicken bones", "path_display": "/Chicken Bones", "id": "id:iWFsGCmi1sAAAAAAAAAAqA",
+        "shared_folder_id": "3091964256", "sharing_info": {"read_only": false, "shared_folder_id":
+        "3091964256", "traverse_only": false, "no_access": false}}, {".tag": "file",
+        "name": "Get Started with Dropbox.pdf", "path_lower": "/get started with dropbox.pdf",
+        "path_display": "/Get Started with Dropbox.pdf", "id": "id:iWFsGCmi1sAAAAAAAAAAAg",
+        "client_modified": "2017-05-06T07:09:18Z", "server_modified": "2017-05-06T07:09:18Z",
+        "rev": "1576c68d6", "size": 954166, "content_hash": "59a241924131f19e56aa9622fb23e1cb862ce6eace57b9fa5fdab0350e16e7ac"},
         {".tag": "file", "name": "photo.jpg", "path_lower": "/photo.jpg", "path_display":
-        "/photo.jpg", "id": "id:evvfE6q6cK0AAAAAAAAFGQ", "client_modified": "2013-01-11T08:36:58Z",
-        "server_modified": "2016-12-13T17:03:13Z", "rev": "1f4e24061bdd", "size":
-        197352, "content_hash": "c7b58b482aeadd708460b81752ee28457587cfbeed592e9b4c6b546ddd449bd4"},
-        {".tag": "file", "name": "photo_2.jpg", "path_lower": "/photo_2.jpg", "path_display":
-        "/photo_2.jpg", "id": "id:evvfE6q6cK0AAAAAAAAFGg", "client_modified": "2016-12-13T17:07:24Z",
-        "server_modified": "2016-12-13T17:07:25Z", "rev": "1f4f24061bdd", "size":
-        497219, "content_hash": "5a604749a39330f444973b20a10f2cc7c4a574041957abe95930506ccfa9b2c3"},
-        {".tag": "file", "name": "photo_1.jpg", "path_lower": "/photo_1.jpg", "path_display":
-        "/photo_1.jpg", "id": "id:evvfE6q6cK0AAAAAAAAFHg", "client_modified": "2013-01-11T08:36:58Z",
-        "server_modified": "2016-12-13T17:56:49Z", "rev": "1f5324061bdd", "size":
-        197352, "content_hash": "c7b58b482aeadd708460b81752ee28457587cfbeed592e9b4c6b546ddd449bd4"},
-        {".tag": "file", "name": "photo (1).jpg", "path_lower": "/photo (1).jpg",
-        "path_display": "/photo (1).jpg", "id": "id:evvfE6q6cK0AAAAAAAAB2w", "client_modified":
-        "2016-04-09T15:47:32Z", "server_modified": "2016-12-26T11:19:04Z", "rev":
-        "2a5e24061bdd", "size": 396317, "content_hash": "e878e13fc6d4c46676b4f4bcbd5a57acaec08cd1d564b39b11a008768c09d621"},
-        {".tag": "file", "name": "file (1).txt", "path_lower": "/file (1).txt", "path_display":
-        "/file (1).txt", "id": "id:evvfE6q6cK0AAAAAAAAFIg", "client_modified": "2016-12-26T14:55:14Z",
-        "server_modified": "2016-12-26T14:55:14Z", "rev": "2a6024061bdd", "size":
-        13, "content_hash": "6e50b8ff301198b6715ed02ece1ff8a9983c6e9aa71bc561e14e2c514d7868cd"},
-        {".tag": "file", "name": "file.txt", "path_lower": "/file.txt", "path_display":
-        "/file.txt", "id": "id:evvfE6q6cK0AAAAAAAAFIQ", "client_modified": "2016-12-26T14:57:27Z",
-        "server_modified": "2016-12-26T14:57:27Z", "rev": "2a6224061bdd", "size":
-        14, "content_hash": "a08cf7310b48da5822f42a39be4eebff13aff979b316bccc7da309ad6f00dd74"},
-        {".tag": "file", "name": "another_file.txt", "path_lower": "/another_file.txt",
-        "path_display": "/another_file.txt", "id": "id:evvfE6q6cK0AAAAAAAAFJg", "client_modified":
-        "2016-12-25T12:00:00Z", "server_modified": "2016-12-26T15:38:09Z", "rev":
-        "2a6924061bdd", "size": 22, "content_hash": "c4621af84cda3cc672bf1824161618b81d9f3b24adef2d20f6bf5d471e93a37e"}],
-        "cursor": "AAEzDMKHykVicw8na-T4uhYDhKCxXpYM5Dh2eikXP9fMy8XTU_ycrBQDnP3qe5RnZ5YmTVIyXOLXo-5OfJ5rx9JYwqXh0fRlFpYjNAmJE-PVDOQoUc9p8gH9D8W_t94nq7vrg8gHobTxSzAjFGyh-sQNKXKiQ1ZZ-UiO36cMkaV-Aw",
+        "/photo.jpg", "id": "id:iWFsGCmi1sAAAAAAAAAAcQ", "client_modified": "2017-09-16T08:33:28Z",
+        "server_modified": "2017-09-16T08:36:38Z", "rev": "e0576c68d6", "size": 127795,
+        "content_hash": "4c201265fcd92cc0344afe27b80ae3d2f958a811b4897dfba4ab83c816ce99ab"},
+        {".tag": "file", "name": "img.jpg", "path_lower": "/img.jpg", "path_display":
+        "/img.jpg", "id": "id:iWFsGCmi1sAAAAAAAAAAiw", "client_modified": "2017-10-03T06:25:47Z",
+        "server_modified": "2017-10-03T06:25:48Z", "rev": "101576c68d6", "size": 2897852,
+        "content_hash": "d1e320d590f4d40e9debe805690bcd033c7d75ad82788e14c0b101edac4e86b8"},
+        {".tag": "file", "name": "0030.png", "path_lower": "/0030.png", "path_display":
+        "/0030.png", "id": "id:iWFsGCmi1sAAAAAAAAAAjQ", "client_modified": "2017-10-03T06:37:01Z",
+        "server_modified": "2017-10-03T06:37:02Z", "rev": "105576c68d6", "size": 1170716,
+        "content_hash": "484b4b4ec6aaa8f96bea5c8309261d46750e78e57728a624905f2b4702653794"},
+        {".tag": "file", "name": "test.png", "path_lower": "/test.png", "path_display":
+        "/test.png", "id": "id:iWFsGCmi1sAAAAAAAAAAkg", "client_modified": "2018-02-13T20:11:39Z",
+        "server_modified": "2018-02-13T20:11:39Z", "rev": "10b576c68d6", "size": 61442,
+        "content_hash": "84a3387de0acefc88be32b057700b5e4f7dcda114cdd70715f25d0cb1a074376"},
+        {".tag": "file", "name": "test2.png", "path_lower": "/test2.png", "path_display":
+        "/test2.png", "id": "id:iWFsGCmi1sAAAAAAAAAAkw", "client_modified": "2018-02-13T21:12:22Z",
+        "server_modified": "2018-02-13T21:12:23Z", "rev": "10c576c68d6", "size": 3975,
+        "content_hash": "6744ecc70a37aefcf36635ad9725a93060e9484631ca611a6c5fe1e9a8e6632a"},
+        {".tag": "file", "name": "target.txt", "path_lower": "/target.txt", "path_display":
+        "/target.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAng", "client_modified": "2018-02-13T21:17:47Z",
+        "server_modified": "2018-02-13T21:17:47Z", "rev": "122576c68d6", "size": 22,
+        "content_hash": "2064faa877255c7097e19c8ce5daada411478d0bfb8ed57837eeaa53bd4a10b3"}],
+        "cursor": "AAE-O-urY_vh8g7ICcFWWBzvhyR0uqvyod1YuxnCA2ugmp5nopWeWzBxyMWrR2n_Oj7LUY-SDgYKTcGxTmovttr2rmoUOK5yfU_u4CTKm5aFiwy_uu56viHWPvH4fX5q0fqlbrVzTcxaof6Nwig-EkHLH3YLBtiJgcolHOs2XJph3YNB_FBCKsQTd_7KRIgOvcvPwcT6rrc2y_Lkq5--m-tA",
         "has_more": false}'
     http_version: 
-  recorded_at: Sun, 09 Jul 2017 09:29:37 GMT
+  recorded_at: Fri, 11 May 2018 16:29:47 GMT
 recorded_with: VCR 3.0.3
