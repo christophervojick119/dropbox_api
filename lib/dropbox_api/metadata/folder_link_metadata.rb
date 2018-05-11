@@ -1,5 +1,5 @@
 module DropboxApi::Metadata
-  class FolderLink < Base
+  class FolderLinkMetadata < Base
     field :url, String
     field :name, String
     field :link_permissions, DropboxApi::Metadata::LinkPermissions

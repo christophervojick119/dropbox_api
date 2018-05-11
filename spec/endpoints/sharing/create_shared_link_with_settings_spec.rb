@@ -7,7 +7,7 @@ describe DropboxApi::Client, "#create_shared_link_with_settings" do
     it "creates a shared link", :cassette => "create_shared_link_with_settings/success_file" do
       link = @client.create_shared_link_with_settings "/file_for_sharing.docx"
 
-      expect(link).to be_a(DropboxApi::Metadata::FileLink)
+      expect(link).to be_a(DropboxApi::Metadata::FileLinkMetadata)
     end
 
     it "raises an error if already shared", :cassette => "create_shared_link_with_settings/already_shared" do
@@ -21,7 +21,7 @@ describe DropboxApi::Client, "#create_shared_link_with_settings" do
     it "creates a shared link", :cassette => "create_shared_link_with_settings/success_folder" do
       link = @client.create_shared_link_with_settings "/folder_for_sharing"
 
-      expect(link).to be_a(DropboxApi::Metadata::FolderLink)
+      expect(link).to be_a(DropboxApi::Metadata::FolderLinkMetadata)
     end
   end
 end

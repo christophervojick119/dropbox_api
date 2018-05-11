@@ -3,7 +3,7 @@ module DropboxApi::Results
     #  Shared links applicable to the path argument.
     def links
       @entries ||= @data["links"].map do |entry|
-        DropboxApi::Metadata::SharedLink.new entry
+        DropboxApi::Metadata::SharedLinkMetadata.new entry
       end
     end
 

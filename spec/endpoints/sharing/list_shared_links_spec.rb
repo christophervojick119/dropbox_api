@@ -7,7 +7,7 @@ describe DropboxApi::Client, "#list_shared_links" do
     it "returns a file link", :cassette => "list_shared_links/success_file" do
       result = @client.list_shared_links :path => "/some_folder/file.txt"
 
-      expect(result.links.last).to be_a(DropboxApi::Metadata::FileLink)
+      expect(result.links.last).to be_a(DropboxApi::Metadata::FileLinkMetadata)
     end
 
     it "lists all shared links", :cassette => "list_shared_links/success_file" do
@@ -35,7 +35,7 @@ describe DropboxApi::Client, "#list_shared_links" do
     it "returns a folder link", :cassette => "list_shared_links/success_folder" do
       result = @client.list_shared_links :path => "/some_folder/another_folder"
 
-      expect(result.links.last).to be_a(DropboxApi::Metadata::FolderLink)
+      expect(result.links.last).to be_a(DropboxApi::Metadata::FolderLinkMetadata)
     end
 
     it "lists all shared links", :cassette => "list_shared_links/success_folder" do

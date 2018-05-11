@@ -3,7 +3,7 @@ module DropboxApi::Metadata
   # class when we need to infer the type from the data.
   #
   # This same pattern is used in `DropboxApi::Metadata::Resource`
-  class SharedLink
+  class SharedLinkMetadata
     class << self
       def new(data)
         class_for(data[".tag"].to_sym).new(data)
@@ -14,9 +14,9 @@ module DropboxApi::Metadata
       def class_for(tag)
         case tag
         when :file
-          DropboxApi::Metadata::FileLink
+          DropboxApi::Metadata::FileLinkMetadata
         when :folder
-          DropboxApi::Metadata::FolderLink
+          DropboxApi::Metadata::FolderLinkMetadata
         else
           raise ArgumentError, "Unable to infer resource type for `#{tag}`"
         end
