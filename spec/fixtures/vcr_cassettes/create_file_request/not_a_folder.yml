@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.dropboxapi.com/2/file_requests/create
     body:
       encoding: UTF-8
-      string: '{"title":"Arizona, baby","destination":"/dropbox_api_fixtures/get_metadata/arizona_baby"}'
+      string: '{"title":"Arizona, baby","destination":"/dropbox_api_fixtures/get_metadata/regular_file.txt"}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 07 Jun 2018 16:47:03 GMT
+      - Thu, 07 Jun 2018 16:47:05 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -41,16 +41,16 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Dropbox-Request-Id:
-      - 9c34ea103576a4dadcf9f4cc19275a64
+      - 6939ec05a1901ab8a67e5f44d2e072dd
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '2216'
+      - '956'
     body:
       encoding: ASCII-8BIT
-      string: '{"id": "4AuUyVkgR32IOaGqEh8W", "url": "https://www.dropbox.com/request/4AuUyVkgR32IOaGqEh8W",
-        "title": "Arizona, baby", "destination": "/dropbox_api_fixtures/get_metadata/arizona_baby",
-        "created": "2018-06-07T16:47:03Z", "is_open": true, "file_count": 0}'
+      string: '{"id": "Rx0abkUQRYilC9AdzOl7", "url": "https://www.dropbox.com/request/Rx0abkUQRYilC9AdzOl7",
+        "title": "Arizona, baby", "destination": "/dropbox_api_fixtures/get_metadata/regular_file.txt",
+        "created": "2018-06-07T16:47:04Z", "is_open": true, "file_count": 0}'
     http_version: 
-  recorded_at: Thu, 07 Jun 2018 16:47:03 GMT
+  recorded_at: Thu, 07 Jun 2018 16:47:05 GMT
 recorded_with: VCR 3.0.3
