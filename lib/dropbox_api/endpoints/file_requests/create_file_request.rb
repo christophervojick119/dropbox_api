@@ -8,11 +8,13 @@ module DropboxApi::Endpoints::Files
     # Create a file request for a given path.
     #
     # @param title [String] The title of the file request. Must not be empty.
-    # @param destination [String] The path of the folder in the Dropbox where uploaded files will be sent. For apps with the app folder permission, this will be relative to the app folder.
+    # @param destination [String] The path of the folder in the Dropbox where
+    #   uploaded files will be sent. For apps with the app folder permission,
+    #   this will be relative to the app folder.
     add_endpoint :create_file_request do |title, destination|
       perform_request({
         title: title,
-        destination: destination,
+        destination: destination
       })
     end
   end
