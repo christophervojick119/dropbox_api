@@ -9,7 +9,7 @@ module DropboxApi
     it 'uploads a file', :cassette => "chunked_uploader/success" do
       content = File.open(File.join(DropboxScaffoldBuilder.fixtures_path, "file.txt"))
 
-      uploader = DropboxApi::ChunkedUploader.new(@client, content, "#{path_prefix}/new_file.txt", {
+      uploader = DropboxApi::ChunkedUploader.new(@client, "#{path_prefix}/new_file.txt", content, {
         :chunk_size => 4
       })
       uploader.start

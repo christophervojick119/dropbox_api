@@ -1,9 +1,9 @@
 module DropboxApi
   class ChunkedUploader
-    def initialize(client, content, path, options = {})
+    def initialize(client, path, content, options = {})
       @client = client
-      @content = content
       @path = path
+      @content = content
 
       @options = {
         :mode => 'add',

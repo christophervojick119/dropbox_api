@@ -6,11 +6,13 @@ module DropboxApi::Endpoints::Files
     ErrorType   = DropboxApi::Errors::UploadError
 
     include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::Endpoints::OptionsBuilder
 
     # Creates a new file.
     #
-    # Do not use this to upload a file larger than 150 MB. Instead, create an
-    # upload session with #upload_session_start().
+    # Do not use this to upload a file larger than 150 MB.
+    #
+    # TODO: Link to `#upload_by_chunks`
     #
     # @example
     #   client = DropboxApi::Client.new
@@ -54,19 +56,6 @@ module DropboxApi::Endpoints::Files
       perform_request(options.merge({
         :path => path
       }), content)
-    end
-
-    private
-
-    def build_write_mode_param(write_mode)
-      case write_mode
-      when String, Symbol
-        DropboxApi::Metadata::WriteMode.new write_mode
-      when DropboxApi::Metadata::WriteMode
-        write_mode
-      else
-        raise ArgumentError, "Invalid write mode: #{write_mode.inspect}"
-      end.to_hash
     end
   end
 end

@@ -6,27 +6,32 @@ module DropboxApi::Endpoints
       end
     end
 
-    def build_request(params, content)
-      # TODO: It would be better to have a stream object on which we can call
-      #       #read, rather than the full file content.
-      body = content
+    def build_request(params, body)
       headers = {
         'Dropbox-API-Arg' => JSON.dump(params),
         'Content-Type' => 'application/octet-stream'
       }
-      if body.respond_to?(:bytesize)
-        headers['Content-Length'] = body.bytesize.to_s
-      elsif body.respond_to?(:length)
-        headers['Content-Length'] = body.length.to_s
-      elsif body.respond_to?(:stat)
-        headers['Content-Length'] = body.stat.size.to_s
-      end
+
+      content_length = get_content_length body
+      headers['Content-Length'] = content_length unless content_length.nil?
 
       return body, headers
     end
 
     def perform_request(params, content)
       process_response(get_response(params, content))
+    end
+
+    private
+
+    def get_content_length(content)
+      if content.respond_to?(:bytesize)
+        content.bytesize.to_s
+      elsif content.respond_to?(:length)
+        content.length.to_s
+      elsif content.respond_to?(:stat)
+        content.stat.size.to_s
+      end
     end
   end
 end
