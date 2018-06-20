@@ -1,5 +1,5 @@
 describe DropboxApi::Client, "#create_file_request" do
-  let(:path_prefix) { DropboxScaffoldBuilder.prefix_for :get_metadata }
+  let(:path_prefix) { DropboxScaffoldBuilder.prefix_for :create_file_request }
   before :each do
     @client = DropboxApi::Client.new
   end

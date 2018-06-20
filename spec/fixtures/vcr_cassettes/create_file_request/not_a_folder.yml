@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.dropboxapi.com/2/file_requests/create
     body:
       encoding: UTF-8
-      string: '{"title":"Arizona, baby","destination":"/dropbox_api_fixtures/get_metadata/regular_file.txt"}'
+      string: '{"title":"Arizona, baby","destination":"/dropbox_api_fixtures/create_file_request/regular_file.txt"}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
@@ -19,38 +19,32 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 409
+      message: Conflict
     headers:
       Server:
       - nginx
       Date:
-      - Thu, 07 Jun 2018 16:47:05 GMT
+      - Wed, 20 Jun 2018 15:56:25 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Vary:
-      - Accept-Encoding
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
+      Content-Security-Policy:
+      - sandbox; frame-ancestors 'none'
+      X-Dropbox-Request-Id:
+      - 318f3ca17c5b5ac268d5bb6409975432
+      X-Frame-Options:
+      - DENY
       X-Content-Type-Options:
       - nosniff
-      X-Dropbox-Request-Id:
-      - 6939ec05a1901ab8a67e5f44d2e072dd
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Server-Response-Time:
-      - '956'
+      Content-Disposition:
+      - attachment; filename='error'
     body:
-      encoding: ASCII-8BIT
-      string: '{"id": "Rx0abkUQRYilC9AdzOl7", "url": "https://www.dropbox.com/request/Rx0abkUQRYilC9AdzOl7",
-        "title": "Arizona, baby", "destination": "/dropbox_api_fixtures/get_metadata/regular_file.txt",
-        "created": "2018-06-07T16:47:04Z", "is_open": true, "file_count": 0}'
+      encoding: UTF-8
+      string: '{"error_summary": "not_a_folder/...", "error": {".tag": "not_a_folder"}}'
     http_version: 
-  recorded_at: Thu, 07 Jun 2018 16:47:05 GMT
+  recorded_at: Wed, 20 Jun 2018 15:56:21 GMT
 recorded_with: VCR 3.0.3
