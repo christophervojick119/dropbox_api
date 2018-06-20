@@ -116,7 +116,30 @@ result.has_more?
 
 The instance of `Client` we've initialized is the one you'll be using to
 perform API calls. You can check the class' documentation to find
-[all available endpoints](http://jesus.github.io/dropbox_api/DropboxApi/Client.html)
+[all available endpoints](http://jesus.github.io/dropbox_api/DropboxApi/Client.html).
+
+### Large file uploads
+
+If you need to upload files larger than 150MB the default `#upload` endpoint
+won't work. Instead, you need to start a upload session and upload
+the file in small chunks.
+
+To make this easier, the method `upload_by_chunks` will handle this for you,
+example:
+
+```ruby
+client = DropboxApi::Client.new("VofXAX8D...")
+#=> #<DropboxApi::Client ...>
+File.open("large_file.avi") do |f|
+  client.upload_by_chunks "/remote_path.txt", f
+end
+```
+
+Check out the
+[method documentation](http://www.xuuso.com/dropbox_api/DropboxApi/Client.html#upload_by_chunks-instance_method)
+to find out all available options.
+
+
 
 ## Development
 
@@ -161,14 +184,3 @@ command line.
 Any help will be much appreciated. The easiest way to help is to implement one
 or more of the [endpoints that are still pending](http://jesus.github.io/dropbox_api/file.api_coverage.html). To see how the
 endpoints are implemented, check out the `lib/dropbox_api/endpoints` folder.
-
-If you want to help but you're unsure how to get started, please get in touch
-by opening an issue.
-
-Here's the standard way to submit code updates:
-
-1. Fork it ( https://github.com/Jesus/dropbox_api/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
