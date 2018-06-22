@@ -77,6 +77,10 @@ class DropboxScaffoldBuilder
     # No need to set up anything
   end
 
+  def build_upload_by_chunks
+    # No op
+  end
+
   def build_get_thumbnail_batch
     file_content = IO.read File.join(self.class.fixtures_path, "img.png")
     client.upload("#{path_prefix}/img.png", file_content)

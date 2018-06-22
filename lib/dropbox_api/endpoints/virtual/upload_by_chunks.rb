@@ -38,6 +38,8 @@ module DropboxApi
     #
     # @!group virtual
     def upload_by_chunks(path, content, options = {})
+      content = StringIO.new(content) if content.is_a?(String)
+
       uploader = DropboxApi::ChunkedUploader.new(self, path, content, options)
       uploader.start
       uploader.upload

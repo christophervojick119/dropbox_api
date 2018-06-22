@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload_session/start
+    body:
+      encoding: ASCII-8BIT
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.12.1
+      Dropbox-Api-Arg:
+      - "{}"
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 22 Jun 2018 15:13:03 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '469'
+      X-Dropbox-Request-Id:
+      - fa4802648bdbb6ee1f3d9b562256e794
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"session_id": "AAAAAAAAAHKnr89W7J7QAg"}'
+    http_version: 
+  recorded_at: Fri, 22 Jun 2018 15:13:03 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload_session/finish
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.12.1
+      Dropbox-Api-Arg:
+      - '{"cursor":{"session_id":"AAAAAAAAAHKnr89W7J7QAg","offset":14},"commit":{"path":"/dropbox_api_fixtures/upload_by_chunks/file.txt"}}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 22 Jun 2018 15:13:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '778'
+      X-Dropbox-Request-Id:
+      - ff197f4c6af09f276d044f248d2642c4
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "file.txt", "path_lower": "/dropbox_api_fixtures/upload_by_chunks/file.txt",
+        "path_display": "/dropbox_api_fixtures/upload_by_chunks/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAABAA",
+        "client_modified": "2018-06-22T15:13:04Z", "server_modified": "2018-06-22T15:13:04Z",
+        "rev": "1b2576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+    http_version: 
+  recorded_at: Fri, 22 Jun 2018 15:13:04 GMT
+recorded_with: VCR 3.0.3

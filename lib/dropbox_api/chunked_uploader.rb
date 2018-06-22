@@ -2,24 +2,24 @@ module DropboxApi
   class ChunkedUploader
     include DropboxApi::OptionsValidator
 
-    def initialize(client, path, content, options = {})
+    def initialize(client, path, i_stream, options = {})
       @chunk_size = options.delete(:chunk_size) || 4 * 1024 * 1024 # 4 MiB
 
       @client = client
-      @content = content
+      @i_stream = i_stream
 
       init_commit_info(path, options)
     end
 
     def start
-      chunk = @content.read @chunk_size
+      chunk = @i_stream.read @chunk_size
 
       @cursor = @client.upload_session_start chunk
     end
 
     def upload
       loop do
-        chunk = @content.read @chunk_size
+        chunk = @i_stream.read @chunk_size
         break if chunk.nil?
 
         @client.upload_session_append_v2 @cursor, chunk
