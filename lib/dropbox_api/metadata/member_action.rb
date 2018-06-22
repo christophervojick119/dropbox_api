@@ -1,14 +1,14 @@
 module DropboxApi::Metadata
   # An action will be one of the following:
   #
-  # - +:leave_a_copy+: Allow the member to keep a copy of the folder when
+  # - `:leave_a_copy`: Allow the member to keep a copy of the folder when
   #   removing.
-  # - +:make_editor+: Make the member an editor of the folder.
-  # - +:make_owner+: Make the member an owner of the folder.
-  # - +:make_viewer+: Make the member a viewer of the folder.
-  # - +:make_viewer_no_comment+: Make the member a viewer of the folder without
+  # - `:make_editor`: Make the member an editor of the folder.
+  # - `:make_owner`: Make the member an owner of the folder.
+  # - `:make_viewer`: Make the member a viewer of the folder.
+  # - `:make_viewer_no_comment`: Make the member a viewer of the folder without
   #   commenting permissions.
-  # - +:remove+: Remove the member from the folder.
+  # - `:remove`: Remove the member from the folder.
   #
   # Example of a serialized {MemberAction} object:
   #

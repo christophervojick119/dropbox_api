@@ -11,11 +11,11 @@ module DropboxApi::Endpoints::Files
     #
     # @param paths [Array<String>] The paths to the image files you want thumbnails for.
     # @option options format [:jpeg, :png] The format for the thumbnail image,
-    #   +:jpeg+ (default) or +:png+. For images that are photos, +:jpeg+ should be
+    #   `:jpeg` (default) or `:png`. For images that are photos, `:jpeg` should be
     #   preferred, while png is better for screenshots and digital arts. The
-    #   default is +:jpeg+.
+    #   default is `:jpeg`.
     # @option options size [:w32h32, :w64h64, :w128h128, :w640h480, :w1024h768]
-    #   The size for the thumbnail image. The default is +:w64h64+.
+    #   The size for the thumbnail image. The default is `:w64h64`.
     # @option options mode [:strict, :bestfit, :fitone_bestfit]
     #   How to resize and crop the image to achieve the desired size. The default
     #   for this union is strict.

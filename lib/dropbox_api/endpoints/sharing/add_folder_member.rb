@@ -11,17 +11,17 @@ module DropboxApi::Endpoints::Sharing
     # folder to add another member.
     #
     # For the new member to get access to all the functionality for this folder,
-    # you will need to call +mount_folder+ on their behalf.
+    # you will need to call `mount_folder` on their behalf.
     #
     # Apps must have full Dropbox access to use this endpoint.
     #
-    # The +members+ parameter can be an +Array+ or a single member element.
-    # Each element is represented by either a +String+ or a
+    # The `members` parameter can be an `Array` or a single member element.
+    # Each element is represented by either a `String` or a
     # {Metadata::AddMember} object. This parameter can be just a string with
     # an email.
     #
     # You can also build a {Metadata::AddMember} object and use it in the
-    # +members+ parameter, this allows custom  options for each member.
+    # `members` parameter, this allows custom  options for each member.
     #
     # @example
     #   client = DropboxApi::Client.new

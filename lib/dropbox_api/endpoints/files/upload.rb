@@ -28,7 +28,7 @@ module DropboxApi::Endpoints::Files
     #   #=> #<DropboxApi::Metadata::File: @name="file (1).txt" ...>
     # @param path [String] Path in the user's Dropbox to save the file.
     # @param content The contents of the file that will be uploaded. This
-    #   could be the result of the +IO::read+ method.
+    #   could be the result of the `IO::read` method.
     # @option options mode [DropboxApi::Metadata::WriteMode] Selects what to
     #   do if the file already exists. The default is `add`.
     # @option options autorename [Boolean] If there's a conflict, as determined

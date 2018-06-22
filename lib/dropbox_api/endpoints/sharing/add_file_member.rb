@@ -9,24 +9,24 @@ module DropboxApi::Endpoints::Sharing
 
     # Adds specified members to a file.
     #
-    # The +members+ parameter can be an +Array+ or a single member element. Each
-    # element is represented by either a +String+ or a {Metadata::Member}
+    # The `members` parameter can be an `Array` or a single member element. Each
+    # element is represented by either a `String` or a {Metadata::Member}
     # object. You can identify a member using his email or a Dropbox ID.
     #
     # @param file [String] File to which to add members. It can be a path or
-    #   an ID such as +id:3kmLmQFnf1AAAAAAAAAAAw+.
+    #   an ID such as `id:3kmLmQFnf1AAAAAAAAAAAw`.
     # @param members Members to add. Note
     #   that even if an email address is given, this may result in a user
     #   being directy added to the membership if that email is the user's
     #   main account email.
     # @option options quiet [Boolean] Whether added members should be notified
     #   via email and device notifications of their invite. The default for
-    #   this field is +false+.
+    #   this field is `false`.
     # @option options custom_message [String] Message to send to added members
     #   in their invitation. This field is optional.
     # @option options access_level [AccessLevel] AccessLevel union object,
     #   describing what access level we want to give new members. The default
-    #   for this is +:viewer+.
+    #   for this is `:viewer`.
     # @option options add_message_as_comment [String] Optional message to
     #   display to added members in their invitation. This field is optional.
     # @see DropboxApi::Metadata::Member

@@ -2,7 +2,7 @@ module DropboxApi::Metadata
   # This class is used as an adapter so we can create an object of the pertinent
   # class when we need to infer the type from the data.
   #
-  # For example, calling +Resource.new({".tag" => "file", :name => ...})+ will
+  # For example, calling `Resource.new({".tag" => "file", :name => ...})` will
   # instantiate a `File` object.
   #
   # So this could initalize an object of either `File`, `Folder` or `Deleted`.

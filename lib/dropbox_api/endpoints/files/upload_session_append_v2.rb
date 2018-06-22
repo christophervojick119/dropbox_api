@@ -9,7 +9,7 @@ module DropboxApi::Endpoints::Files
 
     # Append more data to an upload session.
     #
-    # When the parameter +close+ is set, this call will close the session.
+    # When the parameter `close` is set, this call will close the session.
     #
     # A single request should not upload more than 150 MB.
     #
@@ -30,10 +30,10 @@ module DropboxApi::Endpoints::Files
     # @param cursor [DropboxApi::Metadata::UploadSessionCursor] Contains the
     #   upload session ID and the offset. This cursor will have its offset
     #   updated after a successful call.
-    # @option options close [Boolean] If +true+, the current session will be
+    # @option options close [Boolean] If `true`, the current session will be
     #   closed, at which point you won't be able to call
     #   {Client#upload_session_append_v2} anymore with the current session.
-    #   The default for this field is +false+.
+    #   The default for this field is `false`.
     # @see UploadSessionCursor
     add_endpoint :upload_session_append_v2 do |cursor, content, options = {}|
       validate_options([

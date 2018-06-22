@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::SaveUrlJobStatus
     ErrorType   = DropboxApi::Errors::PollError
 
-    # Check the status of a +save_url+ job.
+    # Check the status of a `save_url` job.
     #
     # @param job_id [String] Id of the asynchronous job. This is the value of
     #   a response returned from the method that launched the job.

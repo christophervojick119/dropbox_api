@@ -1,5 +1,5 @@
 module DropboxApi::Results
-  # Example of a result of the +add_file_member+ endpoint:
+  # Example of a result of the `add_file_member` endpoint:
   #   [{
   #     "member":{
   #       ".tag": "email",

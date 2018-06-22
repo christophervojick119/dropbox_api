@@ -14,12 +14,12 @@ module DropboxApi::Metadata
   # target path with contents different from the contents you're trying to
   # write. The value will be one of the following datatypes:
   #
-  # - +:add+: Do not overwrite an existing file if there is a conflict. The
+  # - `:add`: Do not overwrite an existing file if there is a conflict. The
   #   autorename strategy is to append a number to the file name. For example,
   #   "document.txt" might become "document (2).txt".
-  # - +:overwrite+: Always overwrite the existing file. The autorename strategy
+  # - `:overwrite`: Always overwrite the existing file. The autorename strategy
   #   is the same as it is for add.
-  # - +:update+: Overwrite if the given "rev" matches the existing file's
+  # - `:update`: Overwrite if the given "rev" matches the existing file's
   #   "rev". The autorename strategy is to append the string "conflicted copy"
   #   to the file name. For example, "document.txt" might become
   #   "document (conflicted copy).txt" or
