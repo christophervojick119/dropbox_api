@@ -6,7 +6,7 @@ module DropboxApi::Metadata
   #   ".tag": "viewer"
   # }
   # ```
-  class AccessLevel < DropboxApi::Metadata::Symbol
+  class AccessLevel < DropboxApi::Metadata::Tag
     VALID_ACCESS_LEVELS = [
       :owner,
       :editor,

@@ -14,7 +14,7 @@ require 'dropbox_api/middleware/stack'
 require 'dropbox_api/metadata/field'
 require 'dropbox_api/metadata/base'
 
-require 'dropbox_api/metadata/symbol'
+require 'dropbox_api/metadata/tag'
 require 'dropbox_api/metadata/access_level'
 require 'dropbox_api/metadata/member_action'
 

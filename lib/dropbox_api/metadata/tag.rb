@@ -1,5 +1,5 @@
 module DropboxApi::Metadata
-  class Symbol < DropboxApi::Metadata::Base
+  class Tag < DropboxApi::Metadata::Base
     def self.new(data)
       case data
       when ::Symbol

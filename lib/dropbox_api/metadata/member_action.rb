@@ -17,7 +17,7 @@ module DropboxApi::Metadata
   #   ".tag": "leave_a_copy"
   # }
   # ```
-  class MemberAction < DropboxApi::Metadata::Symbol
+  class MemberAction < DropboxApi::Metadata::Tag
     VALID_MEMBER_ACTIONS = [
       :leave_a_copy,
       :make_editor,
