@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Metadata::Resource
     ErrorType   = DropboxApi::Errors::GetMetadataError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Returns the metadata for a file or folder.
     #

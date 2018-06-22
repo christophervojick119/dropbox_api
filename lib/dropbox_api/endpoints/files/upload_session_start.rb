@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::UploadSessionStart
     ErrorType   = nil
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Upload sessions allow you to upload a single file in one or more
     # requests, for example where the size of the file is greater than 150 MB.

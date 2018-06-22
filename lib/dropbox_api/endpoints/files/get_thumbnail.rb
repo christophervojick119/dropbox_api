@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Metadata::File
     ErrorType   = DropboxApi::Errors::PreviewError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Get a thumbnail for an image.
     #

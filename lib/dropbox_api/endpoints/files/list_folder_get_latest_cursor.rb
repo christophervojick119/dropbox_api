@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::ListFolderGetLatestCursorResult
     ErrorType   = DropboxApi::Errors::ListFolderError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # A way to quickly get a cursor for the folder's state. Unlike
     # {DropboxApi::API#list_folder}, this doesn't return any entries. This

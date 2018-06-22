@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Sharing
     ResultType  = DropboxApi::Results::VoidResult
     ErrorType   = DropboxApi::Errors::AddFolderMemberError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Allows an owner or editor (if the ACL update policy allows) of a shared
     # folder to add another member.

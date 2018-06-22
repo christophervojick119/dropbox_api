@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::GetThumbnailBatchResult
     ErrorType   = DropboxApi::Errors::ThumbnailBatchError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Get a thumbnails for a batch of images.
     #

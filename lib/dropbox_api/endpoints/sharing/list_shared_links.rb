@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Sharing
     ResultType  = DropboxApi::Results::ListSharedLinksResult
     ErrorType   = DropboxApi::Errors::ListSharedLinksError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # List shared links of this user.
     #

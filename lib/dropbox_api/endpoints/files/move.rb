@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Metadata::Resource
     ErrorType   = DropboxApi::Errors::RelocationError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Move a file or folder to a different location in the user's Dropbox.
     #

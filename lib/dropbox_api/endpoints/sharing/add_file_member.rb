@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Sharing
     ResultType  = DropboxApi::Results::AddFileMemberResultList
     ErrorType   = DropboxApi::Errors::AddFileMemberError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Adds specified members to a file.
     #

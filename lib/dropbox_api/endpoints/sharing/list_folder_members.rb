@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Sharing
     ResultType  = DropboxApi::Results::SharedFolderMembers
     ErrorType   = DropboxApi::Errors::SharedFolderAccessError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Returns shared folder membership by its folder ID.
     #

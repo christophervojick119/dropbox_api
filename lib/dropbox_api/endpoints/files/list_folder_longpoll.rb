@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::ListFolderLongpollResult
     ErrorType   = DropboxApi::Errors::ListFolderLongpollError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # A longpoll endpoint to wait for changes on an account. In conjunction
     # with list_folder, this call gives you a low-latency way to monitor an

@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Sharing
     ResultType  = DropboxApi::Results::ShareFolderLaunch
     ErrorType   = DropboxApi::Errors::ShareFolderError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Share a folder with collaborators.
     #

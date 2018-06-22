@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::ListRevisionsResult
     ErrorType   = DropboxApi::Errors::ListRevisionsError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Return revisions of a file
     #

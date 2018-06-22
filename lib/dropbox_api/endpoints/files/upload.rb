@@ -5,8 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Metadata::File
     ErrorType   = DropboxApi::Errors::UploadError
 
-    include DropboxApi::Endpoints::OptionsValidator
-    include DropboxApi::Endpoints::OptionsBuilder
+    include DropboxApi::OptionsValidator
 
     # Creates a new file.
     #

@@ -6,8 +6,6 @@ require 'faraday'
 
 require 'dropbox_api/authenticator'
 
-require 'dropbox_api/chunked_uploader'
-
 require 'dropbox_api/middleware/decode_result'
 require 'dropbox_api/middleware/stack'
 
@@ -127,6 +125,7 @@ require 'dropbox_api/results/upload_session_start'
 
 require 'dropbox_api/client'
 require 'dropbox_api/connection_builder'
+require 'dropbox_api/options_validator'
 
 require 'dropbox_api/endpoints/base'
 require 'dropbox_api/endpoints/rpc'
@@ -134,8 +133,7 @@ require 'dropbox_api/endpoints/rpc_content'
 require 'dropbox_api/endpoints/rpc_notify'
 require 'dropbox_api/endpoints/content_download'
 require 'dropbox_api/endpoints/content_upload'
-require 'dropbox_api/endpoints/options_validator'
-require 'dropbox_api/endpoints/options_builder'
+
 require 'dropbox_api/endpoints/files/copy'
 require 'dropbox_api/endpoints/files/copy_reference_get'
 require 'dropbox_api/endpoints/files/copy_reference_save'
@@ -161,6 +159,7 @@ require 'dropbox_api/endpoints/files/upload'
 require 'dropbox_api/endpoints/files/upload_session_start'
 require 'dropbox_api/endpoints/files/upload_session_append_v2'
 require 'dropbox_api/endpoints/files/upload_session_finish'
+
 require 'dropbox_api/endpoints/sharing/add_file_member'
 require 'dropbox_api/endpoints/sharing/add_folder_member'
 require 'dropbox_api/endpoints/sharing/list_folder_members'
@@ -168,9 +167,14 @@ require 'dropbox_api/endpoints/sharing/share_folder'
 require 'dropbox_api/endpoints/sharing/list_shared_links'
 require 'dropbox_api/endpoints/sharing/create_shared_link_with_settings'
 require 'dropbox_api/endpoints/sharing/unshare_file'
+
 require 'dropbox_api/endpoints/users/get_account'
 require 'dropbox_api/endpoints/users/get_account_batch'
 require 'dropbox_api/endpoints/users/get_current_account'
 require 'dropbox_api/endpoints/users/get_space_usage'
+
 require 'dropbox_api/endpoints/file_requests/create_file_request'
+
+require 'dropbox_api/chunked_uploader'
+
 require 'dropbox_api/endpoints/virtual/upload_by_chunks'

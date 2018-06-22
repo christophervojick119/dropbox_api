@@ -5,7 +5,7 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::ListFolderResult
     ErrorType   = DropboxApi::Errors::ListFolderError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Returns the contents of a folder.
     #
