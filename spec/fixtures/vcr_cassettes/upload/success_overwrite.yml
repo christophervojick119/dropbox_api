@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"autorename":true,"mode":{".tag":"overwrite"},"path":"/dropbox_api_fixtures/upload/file.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file.txt","mode":{".tag":"overwrite"},"autorename":true}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -29,7 +29,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 13 Feb 2018 21:16:57 GMT
+      - Fri, 22 Jun 2018 14:06:07 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -43,17 +43,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '1008'
+      - '1022'
       X-Dropbox-Request-Id:
-      - ca12322f3e36bac3ca17ef9ac10695dd
+      - fc15dce623231646340dfb050f5d95d7
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: '{"name": "file.txt", "path_lower": "/dropbox_api_fixtures/upload/file.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAlQ",
-        "client_modified": "2018-02-13T21:16:57Z", "server_modified": "2018-02-13T21:16:57Z",
-        "rev": "119576c68d6", "size": 13, "content_hash": "6e50b8ff301198b6715ed02ece1ff8a9983c6e9aa71bc561e14e2c514d7868cd"}'
+        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA6A",
+        "client_modified": "2018-06-22T14:06:07Z", "server_modified": "2018-06-22T14:06:07Z",
+        "rev": "196576c68d6", "size": 13, "content_hash": "6e50b8ff301198b6715ed02ece1ff8a9983c6e9aa71bc561e14e2c514d7868cd"}'
     http_version: 
-  recorded_at: Tue, 13 Feb 2018 21:16:58 GMT
+  recorded_at: Fri, 22 Jun 2018 14:06:07 GMT
 recorded_with: VCR 3.0.3

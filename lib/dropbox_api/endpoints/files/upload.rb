@@ -49,12 +49,9 @@ module DropboxApi::Endpoints::Files
         :mute
       ], options)
 
-      options[:mode] = build_write_mode_param(options[:mode]) if options[:mode]
-      options[:client_modified] = options[:client_modified].utc.strftime("%FT%TZ") if options[:client_modified]
-
-      perform_request(options.merge({
-        :path => path
-      }), content)
+      options[:path] = path
+      commit_info = DropboxApi::Metadata::CommitInfo.build_from_options options
+      perform_request(commit_info.to_hash, content)
     end
   end
 end

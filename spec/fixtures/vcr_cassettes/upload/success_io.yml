@@ -14,7 +14,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_io.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -31,7 +31,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 15 Jun 2018 15:31:53 GMT
+      - Fri, 22 Jun 2018 14:06:04 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -45,17 +45,17 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '764'
+      - '716'
       X-Dropbox-Request-Id:
-      - 1b088b457fa5bd1954f8b60f561b8f55
+      - 53378ecc21b04321a8d62e461c66c15e
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
-      string: '{"name": "file.txt", "path_lower": "/dropbox_api_fixtures/upload/file.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file.txt", "id": "id:iWFsGCmi1sAAAAAAAAAAzw",
-        "client_modified": "2018-06-15T15:31:53Z", "server_modified": "2018-06-15T15:31:53Z",
-        "rev": "163576c68d6", "size": 10, "content_hash": "709a5cf259366d6ca6b2fa4d3b53c02f5ce2b2764e9d580711e3ffd24d79f5e9"}'
+      string: '{"name": "file_io.txt", "path_lower": "/dropbox_api_fixtures/upload/file_io.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_io.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA6Q",
+        "client_modified": "2018-06-22T14:06:04Z", "server_modified": "2018-06-22T14:06:04Z",
+        "rev": "194576c68d6", "size": 10, "content_hash": "709a5cf259366d6ca6b2fa4d3b53c02f5ce2b2764e9d580711e3ffd24d79f5e9"}'
     http_version: 
-  recorded_at: Fri, 15 Jun 2018 15:31:53 GMT
+  recorded_at: Fri, 22 Jun 2018 14:06:04 GMT
 recorded_with: VCR 3.0.3

@@ -5,13 +5,15 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::VoidResult
     ErrorType   = DropboxApi::Errors::UploadSessionLookupError
 
-    include DropboxApi::Endpoints::OptionsValidator
+    include DropboxApi::OptionsValidator
 
     # Append more data to an upload session.
     #
     # When the parameter +close+ is set, this call will close the session.
     #
-    # A single request should not upload more than 150 MB of file contents.
+    # A single request should not upload more than 150 MB.
+    #
+    # The maximum size of a file one can upload to an upload session is 350 GB.
     #
     # Calling this method may update the cursor received. In particular, the
     # offset variable will be increased to match the new position. This allows

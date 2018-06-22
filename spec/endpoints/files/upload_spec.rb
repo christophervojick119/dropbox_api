@@ -11,12 +11,12 @@ describe DropboxApi::Client, "#upload" do
     expect(file.name).to eq("file.txt")
   end
 
-  it "works with a IO object", :cassette => "upload/success_io" do
+  it "works with an IO object", :cassette => "upload/success_io" do
     content = File.open(File.join(DropboxScaffoldBuilder.fixtures_path, "file.txt"))
-    file = @client.upload("#{path_prefix}/file.txt", content)
+    file = @client.upload("#{path_prefix}/file_io.txt", content)
 
     expect(file).to be_a(DropboxApi::Metadata::File)
-    expect(file.name).to eq("file.txt")
+    expect(file.name).to eq("file_io.txt")
     expect(file.content_hash).to eq("709a5cf259366d6ca6b2fa4d3b53c02f5ce2b2764e9d580711e3ffd24d79f5e9")
   end
 

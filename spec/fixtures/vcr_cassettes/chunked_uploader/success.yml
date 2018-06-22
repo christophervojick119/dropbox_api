@@ -29,7 +29,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 15 Jun 2018 16:07:21 GMT
+      - Fri, 22 Jun 2018 13:39:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -43,16 +43,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '326'
+      - '382'
       X-Dropbox-Request-Id:
-      - '0649af4b41e33462e0fdfe314e34b0db'
+      - 36c060a474ad1dbf0c409df623d7b7f1
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
-      string: '{"session_id": "AAAAAAAAAFaJRbyAm7QqsA"}'
+      string: '{"session_id": "AAAAAAAAAFzyl9lc74QNQw"}'
     http_version: 
-  recorded_at: Fri, 15 Jun 2018 16:07:21 GMT
+  recorded_at: Fri, 22 Jun 2018 13:39:31 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/append_v2
@@ -65,7 +65,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAAAFaJRbyAm7QqsA","offset":4}}'
+      - '{"cursor":{"session_id":"AAAAAAAAAFzyl9lc74QNQw","offset":4}}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -82,7 +82,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 15 Jun 2018 16:07:22 GMT
+      - Fri, 22 Jun 2018 13:39:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -96,16 +96,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '402'
+      - '333'
       X-Dropbox-Request-Id:
-      - '08d3e88477d19fbb37f58b108baef05b'
+      - bb976bc84256737448120665a26b8cc4
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: 'null'
     http_version: 
-  recorded_at: Fri, 15 Jun 2018 16:07:22 GMT
+  recorded_at: Fri, 22 Jun 2018 13:39:32 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/append_v2
@@ -120,7 +120,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAAAFaJRbyAm7QqsA","offset":8}}'
+      - '{"cursor":{"session_id":"AAAAAAAAAFzyl9lc74QNQw","offset":8}}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -137,7 +137,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 15 Jun 2018 16:07:22 GMT
+      - Fri, 22 Jun 2018 13:39:33 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -151,16 +151,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '397'
+      - '502'
       X-Dropbox-Request-Id:
-      - e63361face6523bd639fd86856766018
+      - 3d0c0fa97e59a746cb0188dbd1c3b94f
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: 'null'
     http_version: 
-  recorded_at: Fri, 15 Jun 2018 16:07:22 GMT
+  recorded_at: Fri, 22 Jun 2018 13:39:33 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload_session/finish
@@ -173,7 +173,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.12.1
       Dropbox-Api-Arg:
-      - '{"cursor":{"session_id":"AAAAAAAAAFaJRbyAm7QqsA","offset":10},"commit":{"path":"/dropbox_api_fixtures/chunked_uploader/new_file.txt","mode":{".tag":"add"}}}'
+      - '{"cursor":{"session_id":"AAAAAAAAAFzyl9lc74QNQw","offset":10},"commit":{"path":"/dropbox_api_fixtures/chunked_uploader/new_file.txt"}}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -190,7 +190,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 15 Jun 2018 16:07:23 GMT
+      - Fri, 22 Jun 2018 13:39:34 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -204,9 +204,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '651'
+      - '1088'
       X-Dropbox-Request-Id:
-      - ba12e9d4ab732af3b2137b1c3bf776f6
+      - 28e1ee85b0f76c2cca44e63f024d1bfb
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
@@ -217,5 +217,5 @@ http_interactions:
         "2018-06-15T15:36:50Z", "rev": "165576c68d6", "size": 10, "content_hash":
         "709a5cf259366d6ca6b2fa4d3b53c02f5ce2b2764e9d580711e3ffd24d79f5e9"}'
     http_version: 
-  recorded_at: Fri, 15 Jun 2018 16:07:23 GMT
+  recorded_at: Fri, 22 Jun 2018 13:39:34 GMT
 recorded_with: VCR 3.0.3
