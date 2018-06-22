@@ -1,5 +1,5 @@
 module DropboxApi::Metadata
-  # Example of a serialized {FileLink} object:
+  # Example of a serialized {FileLinkMetadata} object:
   #
   # ```json
   # {
