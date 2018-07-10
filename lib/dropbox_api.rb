@@ -134,6 +134,8 @@ require 'dropbox_api/endpoints/rpc_notify'
 require 'dropbox_api/endpoints/content_download'
 require 'dropbox_api/endpoints/content_upload'
 
+require 'dropbox_api/endpoints/auth/token_revoke'
+
 require 'dropbox_api/endpoints/files/copy'
 require 'dropbox_api/endpoints/files/copy_reference_get'
 require 'dropbox_api/endpoints/files/copy_reference_save'
