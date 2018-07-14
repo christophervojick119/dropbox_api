@@ -58,6 +58,14 @@ class DropboxScaffoldBuilder
     client.upload("#{path_prefix}/regular_file.txt", "Arkansas, dude.")
   end
 
+  def build_delete
+    file_contents = "Tijuana, amigo."
+
+    client.upload "#{path_prefix}/will_be_deleted.txt", file_contents
+    client.upload "#{path_prefix}/folder/a.txt", file_contents
+    client.upload "#{path_prefix}/folder/b.txt", file_contents
+  end
+
   def build_get_metadata
     client.upload("#{path_prefix}/file.txt", "This is a test file.", {
       :client_modified => Time.new(1988, 12, 8, 1, 1, 0, "+00:00")

@@ -5,12 +5,12 @@ http_interactions:
     uri: https://api.dropboxapi.com/2/files/delete
     body:
       encoding: UTF-8
-      string: '{"path":"/b.jpg"}'
+      string: '{"path":"/dropbox_api_fixtures/delete/will_be_deleted.txt"}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.9.2
+      - Faraday v0.12.1
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,35 +25,34 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 01 May 2016 00:47:09 GMT
+      - Sat, 14 Jul 2018 09:12:27 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '242'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
+      Vary:
+      - Accept-Encoding
       Cache-Control:
       - no-cache
       Pragma:
       - no-cache
-      Set-Cookie:
-      - gvc=NTE0OTk1MzM3NjIyMzUwNTI2NzQ0MjY1Mzk2NzIwNTc2NzAwOTg%3D; expires=Fri, 30
-        Apr 2021 00:47:09 GMT; httponly; Path=/; secure
       X-Content-Type-Options:
       - nosniff
-      X-Dropbox-Http-Protocol:
-      - None
+      X-Dropbox-Request-Id:
+      - ed7d516f51b234e14c9e4abc5c5db290
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '280'
-      X-Dropbox-Request-Id:
-      - 9b8b2de904677f4e548183501babdada
+      - '363'
     body:
-      encoding: UTF-8
-      string: '{".tag": "file", "name": "b.jpg", "path_lower": "/b.jpg", "path_display":
-        "/b.jpg", "id": "id:evvfE6q6cK0AAAAAAAAB4A", "client_modified": "2016-04-09T15:47:32Z",
-        "server_modified": "2016-04-10T09:22:19Z", "rev": "29724061bdd", "size": 396317}'
+      encoding: ASCII-8BIT
+      string: '{".tag": "file", "name": "will_be_deleted.txt", "path_lower": "/dropbox_api_fixtures/delete/will_be_deleted.txt",
+        "path_display": "/dropbox_api_fixtures/delete/will_be_deleted.txt", "id":
+        "id:iWFsGCmi1sAAAAAAAAABCQ", "client_modified": "2018-07-14T09:12:19Z", "server_modified":
+        "2018-07-14T09:12:19Z", "rev": "1c0576c68d6", "size": 15, "content_hash":
+        "a3d41e5e40805aa5a0dd47c40a31780cbeb08928969e0b1464ec6f1b78fa4f68"}'
     http_version: 
-  recorded_at: Sun, 01 May 2016 00:47:09 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sat, 14 Jul 2018 09:12:27 GMT
+recorded_with: VCR 3.0.3
