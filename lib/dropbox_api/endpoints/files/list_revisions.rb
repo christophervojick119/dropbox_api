@@ -10,8 +10,8 @@ module DropboxApi::Endpoints::Files
     # Return revisions of a file
     #
     # @param path [String] The path to file you want to see the revisions of.
-    # @option limit [Numeric] The maximum number of revision entries returned.
-    #   The default for this field is 10.
+    # @option options limit [Numeric] The maximum number of revision entries
+    #   returned. The default for this field is 10.
     add_endpoint :list_revisions do |path, options = {}|
       validate_options([
         :limit

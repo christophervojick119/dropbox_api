@@ -10,14 +10,17 @@ module DropboxApi::Endpoints::Files
     # Returns the contents of a folder.
     #
     # @param path [String] The path to the folder you want to read.
-    # @option recursive [Boolean] If `true`, the list folder operation will be
-    #   applied recursively to all subfolders and the response will contain
-    #   contents of all subfolders. The default for this field is `false`.
-    # @option include_media_info [Boolean] If `true`, FileMetadata.media_info
+    # @option options recursive [Boolean] If `true`, the list folder operation
+    #   will be applied recursively to all subfolders and the response will
+    #   contain contents of all subfolders. The default for this field is
+    #   `false`.
+    # @option options include_media_info [Boolean] If `true`, media_info
     #   is set for photo and video. The default for this field is `false`.
-    # @option include_deleted [Boolean] If `true`, DeletedMetadata will be
-    #   returned for deleted file or folder, otherwise LookupError.not_found
-    #   will be returned. The default for this field is `false`.
+    # @option options include_deleted [Boolean] If `true`,
+    #   {DropboxApi::Metadata::Deleted} will be
+    #   returned for deleted file or folder, otherwise
+    #   {DropboxApi::Errors::NotFoundError}
+    #   will be raised. The default for this field is `false`.
     add_endpoint :list_folder do |path, options = {}|
       validate_options([
         :recursive,

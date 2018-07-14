@@ -11,7 +11,7 @@ module DropboxApi::Endpoints::Sharing
     #
     # Most sharing will be completed synchronously. Large folders will be
     # completed asynchronously. To make testing the async case repeatable, set
-    # `ShareFolderArg.force_async`.
+    # `force_async`.
     #
     # If a ShareFolderLaunch.async_job_id is returned, you'll need to call
     # check_share_job_status until the action completes to get the metadata
@@ -21,18 +21,18 @@ module DropboxApi::Endpoints::Sharing
     #
     # @param path [String] The path to the folder to share. If it does not
     #   exist, then a new one is created.
-    # @option member_policy [:anyone, :team] Who can be a member of this shared
-    #   folder. Only applicable if the current user is on a team. The default
-    #   is `:anyone`.
-    # @option acl_update_policy [:owner, :editors] Who can add and remove
-    #   members of this shared folder. The default is `:owner`.
-    # @option shared_link_policy [:anyone, :members] The policy to apply to
-    #   shared links created for content inside this shared folder. The
-    #   current user must be on a team to set this policy to `:members`.
+    # @option options member_policy [:anyone, :team] Who can be a member of
+    #   this shared folder. Only applicable if the current user is on a team.
+    #   The default is `:anyone`.
+    # @option options acl_update_policy [:owner, :editors] Who can add and
+    #   remove members of this shared folder. The default is `:owner`.
+    # @option options shared_link_policy [:anyone, :members] The policy to
+    #   apply to shared links created for content inside this shared folder.
+    #   The current user must be on a team to set this policy to `:members`.
     #   The default is `anyone`.
-    # @option force_async [Boolean] Whether to force the share to happen
-    #   asynchronously. The default for this field is `false`.
-    # @return [ShareFolderLaunch] Shared folder metadata.
+    # @option options force_async [Boolean] Whether to force the share to
+    #   happen asynchronously. The default for this field is `false`.
+    # @return [DropboxApi::Results::ShareFolderLaunch] Shared folder metadata.
     add_endpoint :share_folder do |path, options = {}|
       validate_options([
         :member_policy,

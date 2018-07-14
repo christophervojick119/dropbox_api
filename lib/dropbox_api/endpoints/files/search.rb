@@ -17,13 +17,13 @@ module DropboxApi::Endpoints::Files
     #   token is used for prefix matching (i.e. "bat c" matches "bat cave" but
     #   not "batman car").
     # @param path [String] The path in the user's Dropbox to search.
-    # @option start [Numeric] The starting index within the search results
-    #   (used for paging). The default for this field is 0.
-    # @option max_results [Numeric] The maximum number of search results to
-    #   return. The default for this field is 100.
-    # @option mode [:filename, :filename_and_content, :deleted_filename] The
-    #   search mode. Note that searching file content is only available for
-    #   Dropbox Business accounts. The default is filename.
+    # @option options start [Numeric] The starting index within the search
+    #   results (used for paging). The default for this field is 0.
+    # @option options max_results [Numeric] The maximum number of search
+    #   results to return. The default for this field is 100.
+    # @option options mode [:filename, :filename_and_content, :deleted_filename]
+    #   The search mode. Note that searching file content is only
+    #   available for Dropbox Business accounts. The default is filename.
     add_endpoint :search do |query, path = "", options = {}|
       validate_options([
         :start,

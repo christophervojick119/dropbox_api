@@ -14,8 +14,9 @@ module DropboxApi::Endpoints::Files
     # Note: This endpoint is only available for Dropbox Business apps.
     #
     # @param path [String] Path in the user's Dropbox to delete.
-    # @option parent_rev [String] Perform delete if given "rev" matches the
-    #   existing file's latest "rev". This field does not support deleting a folder.
+    # @option options parent_rev [String] Perform delete if given "rev"
+    #   matches the existing file's latest "rev". This field does not support
+    #   deleting a folder.
     add_endpoint :permanently_delete do |path, options = {}|
       validate_options([:parent_rev], options)
 

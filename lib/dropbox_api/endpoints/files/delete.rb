@@ -17,9 +17,9 @@ module DropboxApi::Endpoints::Files
     # item at time of deletion, and not a {DropboxApi::Metadata::Deleted} object.
     #
     # @param path [String] Path in the user's Dropbox to delete.
-    # @option parent_rev [String] Perform delete if given "rev" matches the
-    #   existing file's latest "rev". This field does not support deleting a
-    #   folder. If the given "rev" doesn't match, a
+    # @option options parent_rev [String] Perform delete if given "rev"
+    #   matches the existing file's latest "rev". This field does not support
+    #   deleting a folder. If the given "rev" doesn't match, a
     #   {DropboxApi::Errors::FileConflictError} will be raised.
     add_endpoint :delete do |path, options = {}|
       validate_options([:parent_rev], options)

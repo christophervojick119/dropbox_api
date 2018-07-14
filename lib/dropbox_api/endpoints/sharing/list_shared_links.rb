@@ -17,9 +17,9 @@ module DropboxApi::Endpoints::Sharing
     # links to parent folders of the given path. Links to parent folders can
     # be suppressed by setting direct_only to true.
     #
-    # @option path [String]
-    # @option cursor [String] The cursor returned by your last call.
-    # @option direct_only [Boolean]
+    # @option options path [String]
+    # @option options cursor [String] The cursor returned by your last call.
+    # @option options direct_only [Boolean]
     # @return [ListSharedLinksResult]
     add_endpoint :list_shared_links do |options = {}|
       validate_options([:path, :cursor, :direct_only], options)
