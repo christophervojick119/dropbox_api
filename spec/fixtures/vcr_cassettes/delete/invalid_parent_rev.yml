@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/files/delete
+    body:
+      encoding: UTF-8
+      string: '{"parent_rev":"1c0576c68d6","path":"/dropbox_api_fixtures/delete/wont_be_deleted.txt"}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 14 Jul 2018 09:37:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - sandbox; frame-ancestors 'none'
+      X-Dropbox-Request-Id:
+      - 9a097dc3be1d9c281566e75887850a96
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Content-Disposition:
+      - attachment; filename='error'
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "path_write/conflict/file/...", "error": {".tag":
+        "path_write", "path_write": {".tag": "conflict", "conflict": {".tag": "file"}}}}'
+    http_version: 
+  recorded_at: Sat, 14 Jul 2018 09:37:35 GMT
+recorded_with: VCR 3.0.3

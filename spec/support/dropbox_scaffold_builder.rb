@@ -62,6 +62,7 @@ class DropboxScaffoldBuilder
     file_contents = "Tijuana, amigo."
 
     client.upload "#{path_prefix}/will_be_deleted.txt", file_contents
+    client.upload "#{path_prefix}/wont_be_deleted.txt", file_contents
     client.upload "#{path_prefix}/folder/a.txt", file_contents
     client.upload "#{path_prefix}/folder/b.txt", file_contents
   end
