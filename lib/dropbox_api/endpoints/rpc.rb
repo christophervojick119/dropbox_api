@@ -7,12 +7,20 @@ module DropboxApi::Endpoints
     end
 
     def build_request(params)
-      body = JSON.dump(params)
-      headers = {
+      request_headers = {
         'content-type' => 'application/json'
       }
 
-      return body, headers
+      return request_body(params), request_headers
+    end
+
+    def request_body(params)
+      # This check is only required for compatibility with old JSON serializers
+      if params.nil?
+        'null'
+      else
+        JSON.dump(params)
+      end
     end
   end
 end
