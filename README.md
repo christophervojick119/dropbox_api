@@ -139,7 +139,14 @@ Check out the
 [method documentation](http://www.xuuso.com/dropbox_api/DropboxApi/Client.html#upload_by_chunks-instance_method)
 to find out all available options.
 
+## Dependencies
 
+This gem depends on
+[oauth2](https://github.com/oauth-xx/oauth2)
+and
+[faraday](https://github.com/lostisland/faraday).
+
+It has official support for Ruby versions `1.9.x` and `2.x`.
 
 ## Development
 
