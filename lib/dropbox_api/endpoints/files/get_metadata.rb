@@ -27,7 +27,11 @@ module DropboxApi::Endpoints::Files
     #   {DropboxApi::Errors::NotFoundError}
     #   will be raised. The default for this field is `false`.
     add_endpoint :get_metadata do |path, options = {}|
-      validate_options([:include_media_info, :include_deleted, :include_has_explicit_shared_members], options)
+      validate_options([
+        :include_media_info,
+        :include_deleted,
+        :include_has_explicit_shared_members
+      ], options)
 
       perform_request(options.merge({
         :path => path
