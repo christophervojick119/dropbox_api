@@ -17,13 +17,17 @@ module DropboxApi::Endpoints::Files
     # @param path [String] The path of a file or folder on Dropbox.
     # @option options include_media_info [Boolean] If `true`, `media_info`
     #   is set for photo and video. The default for this field is `false`.
+    # @option options include_has_explicit_shared_members [Boolean] If `true`,
+    #   the results will include a flag for each file indicating whether or
+    #   not that file has any explicit members. The default for this field
+    #   is `false`.
     # @option options include_deleted [Boolean] If `true`,
     #   {DropboxApi::Metadata::Deleted} will be
     #   returned for deleted file or folder, otherwise
     #   {DropboxApi::Errors::NotFoundError}
     #   will be raised. The default for this field is `false`.
     add_endpoint :get_metadata do |path, options = {}|
-      validate_options([:include_media_info, :include_deleted], options)
+      validate_options([:include_media_info, :include_deleted, :include_has_explicit_shared_members], options)
 
       perform_request(options.merge({
         :path => path

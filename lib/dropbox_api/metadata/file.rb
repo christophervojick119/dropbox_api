@@ -30,6 +30,7 @@ module DropboxApi::Metadata
     field :size, Integer
     field :content_hash, String, :optional
     field :media_info, DropboxApi::Metadata::MediaInfo, :optional
+    field :has_explicit_shared_members, :boolean, :optional
 
     def to_hash
       super.merge(".tag" => "file")
