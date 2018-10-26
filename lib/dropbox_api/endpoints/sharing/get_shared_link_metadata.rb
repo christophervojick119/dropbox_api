@@ -4,7 +4,7 @@ module DropboxApi
       class GetSharedLinkMetadata < DropboxApi::Endpoints::Rpc
         Method      = :post
         Path        = '/2/sharing/get_shared_link_metadata'.freeze
-        ResultType  = DropboxApi::Results::SharedFileMembers
+        ResultType  = DropboxApi::Results::SharedLinkMetadata
         ErrorType   = DropboxApi::Errors::SharingFileAccessError
 
         include DropboxApi::OptionsValidator
