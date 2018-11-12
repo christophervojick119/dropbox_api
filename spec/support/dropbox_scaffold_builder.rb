@@ -95,6 +95,14 @@ class DropboxScaffoldBuilder
     client.upload("#{path_prefix}/img.png", file_content)
   end
 
+  def build_get_shared_link_metadata
+    client.create_folder("#{path_prefix}/shared_folder")
+    client.create_shared_link_with_settings("#{path_prefix}/shared_folder")
+
+    client.upload("#{path_prefix}/shared_file.txt", "I shall be shared.")
+    client.create_shared_link_with_settings("#{path_prefix}/shared_file.txt")
+  end
+
   # We have a prefix for each endpoint to avoid conflicts across them
   def path_prefix
     File.join PREFIX, @endpoint_name
