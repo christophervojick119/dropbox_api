@@ -14,7 +14,7 @@ describe DropboxApi::Client, "#get_shared_link_metadata" do
       .first
     result = @client.get_shared_link_metadata shared_link.url
 
-    expect(result).to be_a(DropboxApi::Results::SharedLinkMetadata)
+    expect(result).to be_a(DropboxApi::Metadata::FileLinkMetadata)
   end
 
   it "works with a folder", :cassette => "get_shared_link_metadata/success_folder" do
@@ -24,6 +24,6 @@ describe DropboxApi::Client, "#get_shared_link_metadata" do
       .first
     result = @client.get_shared_link_metadata shared_link.url
 
-    expect(result).to be_a(DropboxApi::Results::SharedLinkMetadata)
+    expect(result).to be_a(DropboxApi::Metadata::FolderLinkMetadata)
   end
 end

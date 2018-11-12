@@ -123,7 +123,6 @@ require 'dropbox_api/results/shared_file_members'
 require 'dropbox_api/results/shared_folder_members'
 require 'dropbox_api/results/void_result'
 require 'dropbox_api/results/upload_session_start'
-require 'dropbox_api/results/shared_link_metadata'
 
 require 'dropbox_api/client'
 require 'dropbox_api/connection_builder'
