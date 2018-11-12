@@ -81,7 +81,9 @@ module DropboxApi::Errors
   class NotFoundError < BasicError; end
   class RateLimitError < BasicError; end
   class RestrictedContentError < BasicError; end
+  class SharedLinkAccessDeniedError < BasicError; end
   class SharedLinkAlreadyExistsError < BasicError; end
+  class SharedLinkNotFoundError < BasicError; end
   class TeamFolderError < BasicError; end
   class TeamPolicyDisallowsMemberPolicyError < BasicError; end
   class TooManyFilesError < BasicError; end
@@ -92,5 +94,6 @@ module DropboxApi::Errors
   class UnsupportedContentError < BasicError; end
   class UnsupportedExtensionError < BasicError; end
   class UnsupportedImageError < BasicError; end
+  class UnsupportedLinkTypeError < BasicError; end
   class UnverifiedDropboxId < BasicError; end
 end

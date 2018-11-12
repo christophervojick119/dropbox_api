@@ -3,7 +3,7 @@ module DropboxApi::Endpoints::Sharing
     Method      = :post
     Path        = '/2/sharing/get_shared_link_metadata'.freeze
     ResultType  = DropboxApi::Metadata::SharedLinkMetadata
-    ErrorType   = DropboxApi::Errors::SharingFileAccessError
+    ErrorType   = DropboxApi::Errors::SharedLinkError
 
     include DropboxApi::OptionsValidator
 

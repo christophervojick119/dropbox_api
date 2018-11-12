@@ -26,4 +26,12 @@ describe DropboxApi::Client, "#get_shared_link_metadata" do
 
     expect(result).to be_a(DropboxApi::Metadata::FolderLinkMetadata)
   end
+
+  it "raises an error if the link can't be found", :cassette => "get_shared_link_metadata/error_not_found" do
+    bad_link = "https://www.dropbox.com/sh/abcd/1234?dl=0"
+
+    expect {
+      @client.get_shared_link_metadata bad_link
+    }.to raise_error(DropboxApi::Errors::SharedLinkNotFoundError)
+  end
 end
