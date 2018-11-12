@@ -112,7 +112,7 @@ API call | Status
 `/get_file_metadata/batch` | 🌑
 `/get_folder_metadata` | 🌑
 `/get_shared_link_file` | 🌑
-`/get_shared_link_metadata` | 🌑
+`/get_shared_link_metadata` | 🌔
 `/list_file_members` | 🌕
 `/list_file_members/batch` | 🌑
 `/list_file_members/continue` | 🌑
