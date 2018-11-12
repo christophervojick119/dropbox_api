@@ -10,7 +10,7 @@ describe DropboxApi::Metadata::SharedLink do
 
     it "works with a hash URL" do
       url = "http://www.dropbox.com/my/cats/name/s/mittens"
-      shared_link = described_class.new url: url
+      shared_link = described_class.new :url => url
 
       expect(shared_link.to_hash)
         .to eq({:url => url})
