@@ -21,19 +21,25 @@ module DropboxApi::Endpoints::Files
     #   returned for deleted file or folder, otherwise
     #   {DropboxApi::Errors::NotFoundError}
     #   will be raised. The default for this field is `false`.
+    # @option options limit [Numeric] If present, will specify max number of
+    #   results per request (Note:
+    #   {https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder Dropbox docs} indicate
+    #   this is "approximate", and more may be returned)
     add_endpoint :list_folder do |path, options = {}|
       validate_options([
         :recursive,
         :include_media_info,
         :include_deleted,
         :shared_link,
-        :include_has_explicit_shared_members
+        :include_has_explicit_shared_members,
+        :limit
       ], options)
       options[:recursive] ||= false
       options[:include_media_info] ||= false
       options[:include_deleted] ||= false
       options[:shared_link] = build_shared_link_param(options[:shared_link]) if options[:shared_link]
-
+      options[:limit] = options[:limit] if options[:limit]
+      
       perform_request options.merge({
         :path => path
       })
