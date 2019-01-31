@@ -21,8 +21,8 @@ module DropboxApi::Metadata
   # ```
   class File < Base
     field :name, String
-    field :path_lower, String
-    field :path_display, String
+    field :path_lower, String, :optional
+    field :path_display, String, :optional
     field :id, String
     field :client_modified, Time
     field :server_modified, Time

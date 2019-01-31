@@ -146,4 +146,11 @@ context DropboxApi::Metadata::File do
 
     expect(file.to_hash).to eq(file_hash)
   end
+
+  it "works without path data" do
+    file_hash = build_file_hash.reject { |k, _| %w(path_display path_lower).include?(k) }
+    file = DropboxApi::Metadata::File.new(file_hash)
+    expect(file).to be_a(DropboxApi::Metadata::File)
+  end
+
 end
