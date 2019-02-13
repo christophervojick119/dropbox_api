@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/sharing/revoke_shared_link
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.dropbox.com/s/al0w4e11j0e1kp3/file_for_sharing.docx?dl=0"}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Feb 2019 08:18:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - sandbox; frame-ancestors 'none'
+      X-Dropbox-Request-Id:
+      - 155260af1deafc4c9360c7dc7db2cf3a
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Content-Disposition:
+      - attachment; filename='error'
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "shared_link_access_denied/...", "error": {".tag":
+        "shared_link_access_denied"}}'
+    http_version: 
+  recorded_at: Wed, 13 Feb 2019 08:18:20 GMT
+recorded_with: VCR 4.0.0
