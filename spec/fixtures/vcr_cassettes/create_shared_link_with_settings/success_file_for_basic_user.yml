@@ -19,15 +19,15 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 409
-      message: Conflict
+      code: 400
+      message: Bad Request
     headers:
       Server:
       - nginx
       Date:
-      - Tue, 12 Feb 2019 10:54:48 GMT
+      - Tue, 12 Feb 2019 11:56:30 GMT
       Content-Type:
-      - application/json
+      - text/plain; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
@@ -35,7 +35,7 @@ http_interactions:
       Content-Security-Policy:
       - sandbox; frame-ancestors 'none'
       X-Dropbox-Request-Id:
-      - 115a199708b67a64d265982051a8cda2
+      - 26168181dbe897f65a71f81f3c16fb5f
       X-Frame-Options:
       - DENY
       X-Content-Type-Options:
@@ -44,8 +44,8 @@ http_interactions:
       - attachment; filename='error'
     body:
       encoding: UTF-8
-      string: '{"error_summary": "shared_link_already_exists/", "error": {".tag":
-        "shared_link_already_exists"}}'
+      string: 'Error in call to API function "sharing/create_shared_link_with_settings":
+        The given OAuth 2 access token is malformed.'
     http_version: 
-  recorded_at: Tue, 12 Feb 2019 10:54:48 GMT
+  recorded_at: Tue, 12 Feb 2019 11:56:30 GMT
 recorded_with: VCR 4.0.0

@@ -84,6 +84,7 @@ module DropboxApi::Errors
   class SharedLinkAccessDeniedError < BasicError; end
   class SharedLinkAlreadyExistsError < BasicError; end
   class SharedLinkNotFoundError < BasicError; end
+  class SharedLinkMalformedError < BasicError; end
   class TeamFolderError < BasicError; end
   class TeamPolicyDisallowsMemberPolicyError < BasicError; end
   class TooManyFilesError < BasicError; end

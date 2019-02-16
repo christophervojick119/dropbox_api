@@ -5,12 +5,12 @@ http_interactions:
     uri: https://api.dropboxapi.com/2/sharing/create_shared_link_with_settings
     body:
       encoding: UTF-8
-      string: '{"path":"/folder_for_sharing"}'
+      string: '{"path":"/folder_for_sharing","settings":{"requested_visibility":"public","link_password":null,"expires":null}}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.9.2
+      - Faraday v0.15.2
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,36 +25,41 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 22 Jun 2016 13:26:40 GMT
+      - Tue, 12 Feb 2019 10:58:35 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '333'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
+      Vary:
+      - Accept-Encoding
       Cache-Control:
       - no-cache
       Pragma:
       - no-cache
-      Set-Cookie:
-      - gvc=NzkzMjM3NzQyMDU2Nzg1OTI3MjExNzk1NzQyOTMyMjczMTE3MzA%3D; expires=Mon, 21
-        Jun 2021 13:26:40 GMT; httponly; Path=/; secure
       X-Content-Type-Options:
       - nosniff
-      X-Dropbox-Http-Protocol:
-      - None
+      X-Dropbox-Request-Id:
+      - 33de386d2cc282c889ca4b61fdbe53fe
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '817'
-      X-Dropbox-Request-Id:
-      - e2f111a5744ee1586e1995d9cdb10a02
+      - '820'
     body:
-      encoding: UTF-8
-      string: '{".tag": "folder", "url": "https://www.dropbox.com/sh/282edcmnteqrsch/AABh4i9sBKroSX9vCno_yLTLa?dl=0",
-        "id": "id:mLkl0_I63QAAAAAAAAAAAQ", "name": "folder_for_sharing", "path_lower":
+      encoding: ASCII-8BIT
+      string: '{".tag": "folder", "url": "https://www.dropbox.com/sh/wcpltlhexbhzqbu/AADZ9zdgbObWJpXBvn49245Ka?dl=0",
+        "id": "id:qUDX-awBufAAAAAAAAABlQ", "name": "folder_for_sharing", "path_lower":
         "/folder_for_sharing", "link_permissions": {"resolved_visibility": {".tag":
-        "public"}, "requested_visibility": {".tag": "public"}, "can_revoke": true}}'
+        "public"}, "requested_visibility": {".tag": "public"}, "can_revoke": true,
+        "visibility_policies": [{"policy": {".tag": "public"}, "resolved_policy":
+        {".tag": "public"}, "allowed": true}, {"policy": {".tag": "team_only"}, "resolved_policy":
+        {".tag": "team_only"}, "allowed": true}, {"policy": {".tag": "password"},
+        "resolved_policy": {".tag": "password"}, "allowed": true}], "can_set_expiry":
+        true, "can_remove_expiry": true, "allow_download": true, "can_allow_download":
+        true, "can_disallow_download": true, "allow_comments": true, "team_restricts_comments":
+        false}, "team_member_info": {"team_info": {"id": "dbtid:AACGv7SkOZM3V6juRBWlfTd8Midh_Jh7uQQ",
+        "name": "Arizona"}, "display_name": "Arizona Baby", "member_id": "dbmid:AAAcZJAdCZC-ryrZs1MMCXgi0ZKuhizTFPI"}}'
     http_version: 
-  recorded_at: Wed, 22 Jun 2016 13:26:40 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 12 Feb 2019 10:58:35 GMT
+recorded_with: VCR 4.0.0

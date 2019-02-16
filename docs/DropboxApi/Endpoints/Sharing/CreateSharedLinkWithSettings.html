@@ -299,7 +299,7 @@ created shared link This field is optional.</p>
 
 <span class='id identifier rubyid_add_endpoint'>add_endpoint</span> <span class='symbol'>:create_shared_link_with_settings</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_settings'>settings</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='op'>|</span>
   <span class='comment'># NOTE: This endpoint accepts an additional option `settings` which
-</span>  <span class='comment'>#       hasn&#39;t been implemented.
+</span>  <span class='comment'>#       has been implemented but will work only for pro users and it will return no permission error for basic users.
 </span>  <span class='id identifier rubyid_perform_request'>perform_request</span> <span class='symbol'>:path</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_path'>path</span>
 <span class='kw'>end</span></pre>
     </td>
