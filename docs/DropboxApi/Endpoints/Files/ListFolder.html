@@ -6,7 +6,7 @@
 <title>
   Class: DropboxApi::Endpoints::Files::ListFolder
   
-    &mdash; Documentation by YARD 0.9.15
+    &mdash; Documentation by YARD 0.9.16
   
 </title>
 
@@ -314,6 +314,21 @@ will be raised. The default for this field is <code>false</code>.</p>
           
         </li>
       
+        <li>
+          <span class="name">limit</span>
+          <span class="type">(<tt>Numeric</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>If present, will specify max number of
+results per request (Note:
+<a href="https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder" target="_parent" title="Dropbox docs">Dropbox docs</a> indicate
+this is &quot;approximate&quot;, and more may be returned)</p>
+</div>
+          
+        </li>
+      
     </ul>
   
 
@@ -325,10 +340,6 @@ will be raised. The default for this field is <code>false</code>.</p>
       <pre class="lines">
 
 
-24
-25
-26
-27
 28
 29
 30
@@ -341,10 +352,16 @@ will be raised. The default for this field is <code>false</code>.</p>
 37
 38
 39
-40</pre>
+40
+41
+42
+43
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/dropbox_api/endpoints/files/list_folder.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'lib/dropbox_api/endpoints/files/list_folder.rb', line 28</span>
 
 <span class='id identifier rubyid_add_endpoint'>add_endpoint</span> <span class='symbol'>:list_folder</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='op'>|</span>
   <span class='id identifier rubyid_validate_options'>validate_options</span><span class='lparen'>(</span><span class='lbracket'>[</span>
@@ -352,13 +369,15 @@ will be raised. The default for this field is <code>false</code>.</p>
     <span class='symbol'>:include_media_info</span><span class='comma'>,</span>
     <span class='symbol'>:include_deleted</span><span class='comma'>,</span>
     <span class='symbol'>:shared_link</span><span class='comma'>,</span>
-    <span class='symbol'>:include_has_explicit_shared_members</span>
+    <span class='symbol'>:include_has_explicit_shared_members</span><span class='comma'>,</span>
+    <span class='symbol'>:limit</span>
   <span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:recursive</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='kw'>false</span>
   <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:include_media_info</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='kw'>false</span>
   <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:include_deleted</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='kw'>false</span>
   <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:shared_link</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_build_shared_link_param'>build_shared_link_param</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:shared_link</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:shared_link</span><span class='rbracket'>]</span>
-
+  <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:limit</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:limit</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:limit</span><span class='rbracket'>]</span>
+  
   <span class='id identifier rubyid_perform_request'>perform_request</span> <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span>
     <span class='symbol'>:path</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_path'>path</span>
   <span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -373,9 +392,9 @@ will be raised. The default for this field is <code>false</code>.</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Nov 16 09:02:05 2018 by
+  Generated on Sat Feb 16 18:39:21 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.15 (ruby-2.3.3).
+  0.9.16 (ruby-2.3.3).
 </div>
 
     </div>
