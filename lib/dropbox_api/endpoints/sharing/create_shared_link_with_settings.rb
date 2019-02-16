@@ -12,18 +12,23 @@ module DropboxApi::Endpoints::Sharing
     # visibility, though, may depend on other aspects such as team and shared
     # folder settings).
     #
+    # NOTE: The `settings` parameter will only work for pro, business or
+    # enterprise accounts. It will return no permission error otherwise.
+    #
     # @param path [String] The path to be shared by the shared link.
     # @param settings [SharedLinkSettings] The requested settings for the newly
     #   created shared link This field is optional.
     # @return [DropboxApi::Metadata::SharedLinkMetadata]
     #
-    # @option requested_visibility takes three arguments types 'public', 'team_only' and 'password'
-    # @option link_password is required if requested_visibility option has 'password' value.
-    # @option expires takes timestamp in format Timestamp(format="%Y-%m-%dT%H:%M:%SZ"). 
-    # If option expires is provided the link will expire after provided time.
+    # @option settings requested_visibility The requested access for this
+    #   shared link. This field is optional. Must be one of "public",
+    #   "team_only" or "password".
+    # @option settings link_password If requested_visibility is
+    #   "password" this is needed to specify the password to access the link.
+    #   This field is optional.
+    # @option settings expires Expiration time of the shared link. By default
+    #   the link won't expire. This field is optional.
     add_endpoint :create_shared_link_with_settings do |path, settings = {}|
-    # NOTE: SETTINGS only work for pro, business or enterprise accounts. It will return no permission error otherwise.
-
       validate_options([
         :requested_visibility,
         :link_password,
