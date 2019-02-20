@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/files/create_folder_batch/check
+    body:
+      encoding: UTF-8
+      string: '{"async_job_id":"dbjid:AAA8ixe2PLtuFEtS216inFdIa5J8PM5f8c9IcRimbLVqQ-0-bzq0yFEv1yu4UeCSUyZqQn80SjL5cbY-Ow9RBNQE"}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 20 Feb 2019 16:08:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Dropbox-Request-Id:
+      - 9fc6424573fa6957512ba5a735beacf2
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Server-Response-Time:
+      - '126'
+    body:
+      encoding: ASCII-8BIT
+      string: '{".tag": "complete", "entries": [{".tag": "failure", "failure": {".tag":
+        "path", "path": {".tag": "conflict", "conflict": {".tag": "folder"}}}}, {".tag":
+        "failure", "failure": {".tag": "path", "path": {".tag": "conflict", "conflict":
+        {".tag": "folder"}}}}, {".tag": "failure", "failure": {".tag": "path", "path":
+        {".tag": "conflict", "conflict": {".tag": "folder"}}}}, {".tag": "failure",
+        "failure": {".tag": "path", "path": {".tag": "conflict", "conflict": {".tag":
+        "folder"}}}}, {".tag": "failure", "failure": {".tag": "path", "path": {".tag":
+        "conflict", "conflict": {".tag": "folder"}}}}, {".tag": "failure", "failure":
+        {".tag": "path", "path": {".tag": "conflict", "conflict": {".tag": "folder"}}}},
+        {".tag": "failure", "failure": {".tag": "path", "path": {".tag": "conflict",
+        "conflict": {".tag": "folder"}}}}, {".tag": "failure", "failure": {".tag":
+        "path", "path": {".tag": "conflict", "conflict": {".tag": "folder"}}}}, {".tag":
+        "failure", "failure": {".tag": "path", "path": {".tag": "conflict", "conflict":
+        {".tag": "folder"}}}}, {".tag": "failure", "failure": {".tag": "path", "path":
+        {".tag": "conflict", "conflict": {".tag": "folder"}}}}, {".tag": "failure",
+        "failure": {".tag": "path", "path": {".tag": "malformed_path"}}}, {".tag":
+        "failure", "failure": {".tag": "path", "path": {".tag": "malformed_path"}}},
+        {".tag": "failure", "failure": {".tag": "path", "path": {".tag": "malformed_path"}}},
+        {".tag": "success", "metadata": {"name": "folder", "path_lower": "/folder
+        0/folder", "path_display": "/Folder 0/folder", "id": "id:KbufibY6KzAAAAAAAAAI7w"}},
+        {".tag": "success", "metadata": {"name": "folder", "path_lower": "/folder
+        1/folder", "path_display": "/Folder 1/folder", "id": "id:KbufibY6KzAAAAAAAAAI8A"}}]}'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 16:08:20 GMT
+recorded_with: VCR 4.0.0
