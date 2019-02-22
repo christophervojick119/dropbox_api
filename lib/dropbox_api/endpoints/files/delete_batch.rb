@@ -4,8 +4,6 @@ module DropboxApi::Endpoints::Files
     Path        = "/2/files/delete_batch".freeze
     ResultType  = DropboxApi::Results::DeleteBatchResult
 
-    include DropboxApi::OptionsValidator
-
     # NOTE: No errors are returned by this endpoint.
     #
     # Delete multiple files/folders at once.
