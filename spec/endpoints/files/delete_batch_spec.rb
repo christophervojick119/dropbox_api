@@ -1,4 +1,4 @@
-describe DropboxApi::Client, "#delete" do
+describe DropboxApi::Client, "#delete_batch" do
   before :each do
     @client = DropboxApi::Client.new
   end
