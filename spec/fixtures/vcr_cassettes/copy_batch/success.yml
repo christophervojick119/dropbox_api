@@ -5,13 +5,12 @@ http_interactions:
     uri: https://api.dropboxapi.com/2/files/copy_batch_v2
     body:
       encoding: UTF-8
-      string: '{"autorename":false,"entries":[{"from_path":"/folder 1/photo1.png","to_path":"/folder
-        2/photo1.png"}]}'
+      string: '{"autorename":false,"entries":[{"from_path":"/dropbox_api_fixtures/copy_batch/regular_file.txt","to_path":"/dropbox_api_fixtures/copy_batch/regular_file_renamed.txt"}]}'
     headers:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v0.15.2
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -26,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 19 Feb 2019 13:22:04 GMT
+      - Sat, 23 Mar 2019 08:45:29 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -42,14 +41,14 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Dropbox-Request-Id:
-      - 52274cc9a7db2b6c031b8d9340b71f5d
+      - 8e64d593d5c7deec558c58676f199912
       X-Frame-Options:
       - SAMEORIGIN
       X-Server-Response-Time:
-      - '146'
+      - '103'
     body:
       encoding: ASCII-8BIT
-      string: '{".tag": "async_job_id", "async_job_id": "dbjid:AABG1I-LPa5wH5dIqNL2_IY_LxQHTfdv_btYeCoTdOhGt-cUERJCj1xJkYWoxpX-jZau6_eCR2IjVJu3uhhLr9tr"}'
+      string: '{".tag": "async_job_id", "async_job_id": "dbjid:AAA6b4uwc19nEau5k-OBI_h-hjrR7pNDaUA3_0hOwV-UZ2pkw_zXWp3FSuVZrQ0d9IXKGkwB5JdYI4mJZumLc6qZ"}'
     http_version: 
-  recorded_at: Tue, 19 Feb 2019 13:22:04 GMT
+  recorded_at: Sat, 23 Mar 2019 08:45:29 GMT
 recorded_with: VCR 4.0.0
