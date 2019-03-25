@@ -33,8 +33,10 @@ module DropboxApi::Endpoints
 
         raise error
       else
-        raise DropboxApi::Errors::HttpError,
+        raise(
+          DropboxApi::Errors::HttpError,
           "HTTP #{raw_response.status}: #{raw_response.body}"
+        )
       end
     end
 
