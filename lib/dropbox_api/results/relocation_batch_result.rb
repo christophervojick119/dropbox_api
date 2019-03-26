@@ -1,5 +1,5 @@
 module DropboxApi::Results
-  class CopyBatchCheckResult < DropboxApi::Results::Base
+  class RelocationBatchResult < DropboxApi::Results::Base
     def self.new(result_data)
       case result_data[".tag"]
       when "in_progress"
