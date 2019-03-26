@@ -3,7 +3,7 @@ describe DropboxApi::Metadata::CommitInfo do
     commit_info_hash = {
       "path" => "/Homework/math/Matrices.txt",
       "mode" => {
-      ".tag" => "update",
+        ".tag" => "update",
         "update" => "a1c10ce0dd78"
       },
       "autorename" => false,
