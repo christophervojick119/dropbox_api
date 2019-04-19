@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/files/copy_batch/check_v2
+    body:
+      encoding: UTF-8
+      string: '{"async_job_id":"dbjid:AADOVgzSRvtiBJ9dZaE8VUp07JT-zO7k9TrjEfwnzTfGGDuEi1pTRB2vFufnQfX9Yf-N_tzVl52rGEK4GYI8zzsE"}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 19 Feb 2019 17:29:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - sandbox; frame-ancestors 'none'
+      X-Dropbox-Request-Id:
+      - 41b657e4fa848d71d972d29c9cc0861b
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Content-Disposition:
+      - attachment; filename='error'
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "invalid_async_job_id/...", "error": {".tag": "invalid_async_job_id"}}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 17:29:29 GMT
+recorded_with: VCR 4.0.0

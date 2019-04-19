@@ -26,7 +26,7 @@ describe DropboxApi::Client, "#list_folder" do
 
   it "lists entries in shared folder if given", :cassette => "list_folder/success_shared_folder" do
     result = @client.list_shared_links(:path => "#{path_prefix}/shared_folder")
-    result = @client.list_folder "", shared_link: result.links.first.url
+    result = @client.list_folder "", :shared_link => result.links.first.url
 
     result.entries.each do |resource|
       expect(resource).to be_a(DropboxApi::Metadata::Base)
