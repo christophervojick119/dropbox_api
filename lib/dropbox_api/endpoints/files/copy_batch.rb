@@ -20,6 +20,7 @@ module DropboxApi::Endpoints::Files
     # @option options autorename [Boolean] If there's a conflict with any file,
     #   have the Dropbox server try to autorename that file to avoid the
     #   conflict. The default for this field is `false`.
+    # @return [String, Array] Either the job id or the list of job statuses.
     add_endpoint :copy_batch do |entries, options = {}|
       validate_options([
         :autorename
