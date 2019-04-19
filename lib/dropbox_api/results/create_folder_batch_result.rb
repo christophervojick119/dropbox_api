@@ -5,7 +5,7 @@ module DropboxApi::Results
       when "async_job_id"
         result_data
       when "complete"
-        @entries ||= result_data["entries"].map do |entry|
+        result_data["entries"].map do |entry|
           if entry[".tag"] === "success"
             DropboxApi::Metadata::Folder.new entry["metadata"]
           else
@@ -17,4 +17,4 @@ module DropboxApi::Results
       end
     end
   end
-end 
+end
