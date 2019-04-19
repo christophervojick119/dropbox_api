@@ -10,7 +10,7 @@ module DropboxApi::Results
         :in_progress
       when "complete"
         result_data["entries"].map do |entry|
-          RelocationBatchResultEntry.new(entry)
+          DropboxApi::Results::RelocationBatchResultEntry.new(entry)
         end
       else
         raise NotImplementedError, "Unknown result type: #{result_data['.tag']}"
