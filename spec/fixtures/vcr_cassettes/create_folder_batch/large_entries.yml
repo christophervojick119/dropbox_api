@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropboxapi.com/2/files/create_folder_batch
+    body:
+      encoding: UTF-8
+      string: '{"autorename":false,"force_async":false,"paths":["/Folder 0","/Folder
+        1","/Folder 2","/Folder 3","/Folder 4","/Folder 5","/Folder 6","/Folder 7","/Folder
+        8","/Folder 9","/Folder 10","/Folder 11","/Folder 12","/Folder 13","/Folder
+        14","/Folder 15","/Folder 16","/Folder 17","/Folder 18","/Folder 19","/Folder
+        20","/Folder 21","/Folder 22","/Folder 23","/Folder 24","/Folder 25","/Folder
+        26","/Folder 27","/Folder 28","/Folder 29","/Folder 30","/Folder 31","/Folder
+        32","/Folder 33","/Folder 34","/Folder 35","/Folder 36","/Folder 37","/Folder
+        38","/Folder 39","/Folder 40","/Folder 41","/Folder 42","/Folder 43","/Folder
+        44","/Folder 45","/Folder 46","/Folder 47","/Folder 48","/Folder 49","/Folder
+        50","/Folder 51","/Folder 52","/Folder 53","/Folder 54","/Folder 55","/Folder
+        56","/Folder 57","/Folder 58","/Folder 59","/Folder 60","/Folder 61","/Folder
+        62","/Folder 63","/Folder 64","/Folder 65","/Folder 66","/Folder 67","/Folder
+        68","/Folder 69","/Folder 70","/Folder 71","/Folder 72","/Folder 73","/Folder
+        74","/Folder 75","/Folder 76","/Folder 77","/Folder 78","/Folder 79","/Folder
+        80","/Folder 81","/Folder 82","/Folder 83","/Folder 84","/Folder 85","/Folder
+        86","/Folder 87","/Folder 88","/Folder 89","/Folder 90","/Folder 91","/Folder
+        92","/Folder 93","/Folder 94","/Folder 95","/Folder 96","/Folder 97","/Folder
+        98","/Folder 99"]}'
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 20 Feb 2019 11:09:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Dropbox-Request-Id:
+      - ccd7327664105d12a8953ff899d99d53
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Server-Response-Time:
+      - '190'
+    body:
+      encoding: ASCII-8BIT
+      string: '{".tag": "async_job_id", "async_job_id": "dbjid:AAC6Nmz4vJkRz_Gu2MSJZ3PhV_ax9OaG8WQ5EfGffXHQSsvRye2-pqf3clU94YgTlAE2lNNQdzYLvc5DYeuV17pZ"}'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 11:09:52 GMT
+recorded_with: VCR 4.0.0
