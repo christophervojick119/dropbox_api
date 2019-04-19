@@ -1,5 +1,5 @@
 module DropboxApi::Errors
-  class CreateFolderBatchStatusError < BasicError
+  class CreateFolderBatchError < BasicError
     ErrorSubtypes = {
       :too_many_files => TooManyFilesError
     }.freeze

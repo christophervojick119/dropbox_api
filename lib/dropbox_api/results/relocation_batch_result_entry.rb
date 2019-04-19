@@ -6,7 +6,7 @@ module DropboxApi::Results
         DropboxApi::Metadata::Resource.new result_data['success']
       when 'failure'
         DropboxApi::Errors::RelocationBatchEntryError
-          .build(result_data['failure']['.tag'].to_s, result_data['failure'])
+          .build('File or folder operation failed', result_data['failure'])
       else
         raise NotImplementedError, "Unknown result type: #{result_data['.tag']}"
       end

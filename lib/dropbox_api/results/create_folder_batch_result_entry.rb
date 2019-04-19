@@ -5,7 +5,12 @@ module DropboxApi::Results
       when 'success'
         DropboxApi::Metadata::Folder.new result_data['metadata']
       when 'failure'
-        DropboxApi::Errors::WriteError.new result_data['path']
+        # At the moment, this is a `CreateFolderEntryError` which is an open
+        # union that can only be a `WriteError`. In the future, more errors
+        # could be added to the API which means we'd have to implement the
+        # actual `CreateFolderEntryError` class.
+        DropboxApi::Errors::WriteError
+          .build('Folder operation failed', result_data['failure']['path'])
       else
         raise NotImplementedError, "Unknown result type: #{result_data['.tag']}"
       end
