@@ -54,6 +54,11 @@ class DropboxScaffoldBuilder
     @client ||= DropboxApi::Client.new
   end
 
+  def build_copy_batch
+    client.upload("#{path_prefix}/regular_file.txt", "Che primo! aon vas?")
+    client.upload("#{path_prefix}/regular_file_2.txt", "Pal Calvari, amic")
+  end
+
   def build_create_file_request
     client.upload("#{path_prefix}/regular_file.txt", "Arkansas, dude.")
   end

@@ -13,8 +13,8 @@ module DropboxApi::Endpoints::Files
     #   this will be relative to the app folder.
     add_endpoint :create_file_request do |title, destination|
       perform_request({
-        title: title,
-        destination: destination
+        :title => title,
+        :destination => destination
       })
     end
   end

@@ -4,7 +4,7 @@ describe DropboxApi::Client, "#upload_session_append_v2" do
     @client = DropboxApi::Client.new
   end
 
-  it 'can be used to append an upload', cassette: 'upload_session_append_v2/success' do
+  it 'can be used to append an upload', :cassette => 'upload_session_append_v2/success' do
     chunks = ['123456789', 'Olá Dropbox!']
 
     cursor = @client.upload_session_start(chunks.first)

@@ -9,7 +9,7 @@ describe DropboxApi::Client, "#get_shared_link_metadata" do
 
   it "works with a file", :cassette => "get_shared_link_metadata/success_file" do
     shared_link = @client
-      .list_shared_links(path: "#{path_prefix}/shared_file.txt")
+      .list_shared_links(:path => "#{path_prefix}/shared_file.txt")
       .links
       .first
     result = @client.get_shared_link_metadata shared_link.url
@@ -19,7 +19,7 @@ describe DropboxApi::Client, "#get_shared_link_metadata" do
 
   it "works with a folder", :cassette => "get_shared_link_metadata/success_folder" do
     shared_link = @client
-      .list_shared_links(path: "#{path_prefix}/shared_folder")
+      .list_shared_links(:path => "#{path_prefix}/shared_folder")
       .links
       .first
     result = @client.get_shared_link_metadata shared_link.url

@@ -40,7 +40,7 @@ module DropboxApi::Endpoints::Sharing
 
       perform_request({
         :path => path,
-        :settings=> settings
+        :settings => settings
       })
     end
   end
