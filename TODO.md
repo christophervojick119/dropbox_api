@@ -1,11 +1,21 @@
-# Short term goals
+# Immediate
 
-- Remove dependency on faraday.
+- Update documentation for #create_folder_batch & #create_folder_batch_check.
+- Test all added classes since last release.
+  - Add scaffoldings for the new endpoints.
+  - Test all new paths to build errors & results.
+- Update coverage document.
+- Clear out Rubocop's TODO.
+- Release!
+- Update the guide to contribute, show how an endpoint is implemented and
+  documented.
+
+# Mid-term
+
+- Remove dependency on Faraday.
 - Complete full [API coverage](api_coverage.md).
 
-# Further on
+# Dreaming
 
-- Improve the  API reference page, help here:
-  http://gnuu.org/2009/11/18/customizing-yard-templates/
-- Supporting streams would be great.
-- Add a layer to handle pagination, use `Enumerable`.
+- Support streams.
+- Add a layer to handle pagination.
