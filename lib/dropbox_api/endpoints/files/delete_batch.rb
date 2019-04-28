@@ -4,25 +4,15 @@ module DropboxApi::Endpoints::Files
     Path        = "/2/files/delete_batch".freeze
     ResultType  = DropboxApi::Results::DeleteBatchResult
 
-    # NOTE: No errors are returned by this endpoint.
-    #
     # Delete multiple files/folders at once.
     #
-    # This route is asynchronous, which returns a job ID immediately and runs the 
-    #    delete batch asynchronously. Use delete_batch/check to check the job status.
+    # This route is asynchronous, which returns a job ID immediately and runs
+    # the delete batch asynchronously. Use {Client#delete_batch_check} to check
+    # the job status.
     #
-    #
-    # @param entries [Array] List of (DeleteArg)
-    #
-    # DeleteArg
-    #   path String(pattern="(/(.|[\r\n])*)|(ns:[0-9]+(/.*)?)|(id:.*)") Path in the user's Dropbox to delete.
-    #   parent_rev String(min_length=9, pattern="[0-9a-f]+")? Perform delete if given "rev" matches 
-    #       the existing file's latest "rev". This field does not support deleting a folder. This field is optional.
-    #
-    # @return Result returned by delete_batch that may either launch an asynchronous job or complete 
-    #    synchronously. The value will be one of the following datatypes. New values may be introduced 
-    #    as Dropbox API evolves.
-    
+    # @param entries [Array] List of entries, each entry is a Hash with these
+    #   fields: `path` (mandatory) & parent_rev (optional).
+    # @return [String, Array] Either the job id or the list of job statuses.
     add_endpoint :delete_batch do |entries|
       perform_request({
         :entries => entries

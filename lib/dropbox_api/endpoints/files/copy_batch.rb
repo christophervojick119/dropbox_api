@@ -10,8 +10,8 @@ module DropboxApi::Endpoints::Files
     # user's Dropbox.
     #
     # This will either finish synchronously, or return a job ID and do
-    # the async copy job in background. Please use {#copy_batch_check} to check
-    # the job status.
+    # the async copy job in background. Please use {Client#copy_batch_check}
+    # to check the job status.
     #
     # Note: No errors are returned by this endpoint.
     #

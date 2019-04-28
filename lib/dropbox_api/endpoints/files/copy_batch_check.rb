@@ -5,10 +5,10 @@ module DropboxApi::Endpoints::Files
     ResultType  = DropboxApi::Results::RelocationBatchResult
     ErrorType   = DropboxApi::Errors::PollError
 
-    # Returns the status of an asynchronous job for {#copy_batch}. It returns
-    # a list of results for each entry.
+    # Returns the status of an asynchronous job for {Client#copy_batch}. It
+    # returns a list of results for each entry.
     #
-    # @param :async_job_id [String] Id of the asynchronous job.
+    # @param async_job_id [String] Id of the asynchronous job.
     #   This is the value of a response returned from the method that
     #   launched the job.
     # @return [:in_progress, Array] This could be either the `:in_progress`

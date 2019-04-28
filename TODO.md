@@ -1,6 +1,5 @@
 # Immediate
 
-- Update documentation for #create_folder_batch & #create_folder_batch_check.
 - Test all added classes since last release.
   - Add scaffoldings for the new endpoints.
   - Test all new paths to build errors & results.

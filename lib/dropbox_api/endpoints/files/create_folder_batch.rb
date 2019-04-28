@@ -12,7 +12,7 @@ module DropboxApi::Endpoints::Files
     # immediately and runs the create folder batch asynchronously. Otherwise,
     # creates the folders and returns the result synchronously for smaller
     # inputs. You can force asynchronous behaviour by using the `:force_async`
-    # flag. Use {#create_folder_batch_check} to check the job status.
+    # flag. Use {Client#create_folder_batch_check} to check the job status.
     #
     # Note: No errors are returned by this endpoint.
     #

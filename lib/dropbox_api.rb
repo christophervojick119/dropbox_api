@@ -132,7 +132,7 @@ require 'dropbox_api/results/shared_file_members'
 require 'dropbox_api/results/shared_folder_members'
 require 'dropbox_api/results/void_result'
 require 'dropbox_api/results/upload_session_start'
-require 'dropbox_api/results/delete_batch_check_job_status'
+require 'dropbox_api/results/delete_batch_result_entry'
 require 'dropbox_api/results/delete_batch_result'
 
 require 'dropbox_api/client'

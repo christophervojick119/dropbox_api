@@ -11,7 +11,7 @@ module DropboxApi::Endpoints::Files
     #
     # Do not use this to upload a file larger than 150 MB.
     #
-    # For larger files you can use {#upload_by_chunks}.
+    # For larger files you can use {Client#upload_by_chunks}.
     #
     # @example
     #   client = DropboxApi::Client.new
