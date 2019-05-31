@@ -65,26 +65,37 @@ describe DropboxApi::Client, "#upload" do
 
   context "when too many write operations" do
     it "raises a DropboxApi::Errors::TooManyWriteOperations exception", :cassette => "upload/too_many_write_operations" do
-      expect {
-        100.times.map do |n|
-          Thread.new do
-            @client.upload("#{path_prefix}/file_#{n}.txt", "Hello Dropbox!")
-          end
-        end.each(&:join)
+      errors = []
 
-      }.to raise_error(DropboxApi::Errors::TooManyWriteOperationsError)
+      15.times.map do |n|
+        Thread.new do
+          begin
+            @client.upload("#{path_prefix}/file_#{n}.txt", "Hello Dropbox!")
+          rescue DropboxApi::Errors::TooManyWriteOperationsError => e
+            errors << e
+          end
+        end
+      end.each(&:join)
+
+      expect(errors.any?).to be_truthy
     end
 
     it "raises an exception with info to retry", :cassette => "upload/too_many_write_operations" do
-      expect {
-        100.times.map do |n|
-          Thread.new do
+      errors = []
+
+      15.times.map do |n|
+        Thread.new do
+          begin
             @client.upload("#{path_prefix}/file_#{n}.txt", "Hello Dropbox!")
+          rescue DropboxApi::Errors::TooManyWriteOperationsError => e
+            errors << e
           end
-        end.each(&:join)
-      }.to raise_error { |error|
-        expect(error.retry_after).to eq(1)
-      }
+        end
+      end.each(&:join)
+
+      errors.each do |error|
+        expect(error.retry_after).to be_a(Numeric)
+      end
     end
   end
 end

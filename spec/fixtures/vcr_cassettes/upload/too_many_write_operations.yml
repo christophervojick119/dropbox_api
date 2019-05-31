@@ -10,1813 +10,7 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_27.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - c2a497c7c54580bef0fd6ddbc9205e98
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_38.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - ce8a74f384e5b8ac0f61774622d94f5a
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_63.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 872b6a59e182965ba8eaa3dfd4795b35
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_26.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 65b17c8ac53043692a15bdbff758f535
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_53.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 5c404bd2c0d8385ae1ade49d34c33e29
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_47.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 64f57e2180fc147689b98be825ae2e20
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_58.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - ccebe6efc38cc0e078e8a300382990e5
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_98.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 96a082a90ae333f094864018a9af8a83
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_72.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 1f8f0b1395e442fb217aaba52ddcc2fd
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_51.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - e9c754ebb72e7fb55af4220e3753e5d6
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_45.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 3068a3d3110f634256576b779d253cf2
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_21.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 10405ff2a62272359b39059c2cb833c0
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_44.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 111769aa2e99d17ea9ea1c2aaf2157db
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_54.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - ec66042eadf60c21011f73c7ee94cad0
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_32.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 6570a86c52855f6bb6a9f0599e0a7da7
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_36.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 273f427bb20d6f1b9ce0b9afd5b479a7
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_3.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 17e7ad4de848bdcbf1f69c39e711873d
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_97.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 51791128548c45fd49838209bd8df372
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_17.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 8ba934e72f39fef7e995ffa365aa5520
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_91.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 799d7cfd6d90bc0d1a6d4473e9f7ab70
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_28.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 61f9a8cf7b1213f4a3491cbbad5c7c1c
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_92.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 0eaa4dba60cd58122eaf13985151c72b
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_14.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 16a5b86b7a4d8e37cc1ef55c0a401660
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_99.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - f0cd065d0a641926d052dd32d9b5a1fc
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_95.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - c8c5e09ad21a65c1d3a7173edae32a58
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_71.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 9e1df0c21e5ca588f30b7677909a13df
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_96.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - bacdccd447bccdcee5f211cd56e23461
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_23.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - cf3f7addab5c895f9039fb3c6889d840
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_73.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - c2edaf2a8d78507390c32e415a1e2330
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_77.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:12 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - d24d93d2347cb10d3ad5743116fff4b2
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:12 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_57.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - b989469d2b7f10bdb5d0c3977e84b9b7
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_69.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - c577417dde87726c26f50ffd7b75ab86
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_1.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache
-      X-Server-Response-Time:
-      - '707'
-      X-Dropbox-Request-Id:
-      - c28534067bf10012f4ed0f3cd4d240f3
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: ASCII-8BIT
-      string: '{"name": "file_1.txt", "path_lower": "/dropbox_api_fixtures/upload/file_1.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file_1.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA7A",
-        "client_modified": "2018-06-22T14:06:12Z", "server_modified": "2018-06-22T14:06:12Z",
-        "rev": "199576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_80.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 9b45733d53a3f015a258d687825cae97
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_29.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 71b0b57db015453e61482ddb067cae45
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_62.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - de604dcbee72ab3cbfd1ea3f79425d3b
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
       - '{"path":"/dropbox_api_fixtures/upload/file_12.txt"}'
       Content-Type:
@@ -1835,7 +29,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -1849,19 +43,20 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '873'
+      - '661'
       X-Dropbox-Request-Id:
-      - 76ad582485477712621a151f39c7fb21
+      - d3d35a851235f5c5d4684627a9313177
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
       string: '{"name": "file_12.txt", "path_lower": "/dropbox_api_fixtures/upload/file_12.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file_12.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA7Q",
-        "client_modified": "2018-06-22T14:06:12Z", "server_modified": "2018-06-22T14:06:12Z",
-        "rev": "19a576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+        "path_display": "/dropbox_api_fixtures/upload/file_12.txt", "id": "id:iWFsGCmi1sAAAAAAAAABjw",
+        "client_modified": "2019-05-31T21:25:31Z", "server_modified": "2019-05-31T21:25:31Z",
+        "rev": "258576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
+  recorded_at: Fri, 31 May 2019 21:25:31 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -1872,9 +67,9 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_94.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_2.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -1885,33 +80,40 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 429
-      message: too_many_write_operations/...
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '779'
       X-Dropbox-Request-Id:
-      - 58acde2e8e38bc2dd06f78b8afa67459
+      - d5c4dd0fb2a4d1d039516587a9f2350b
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
+      encoding: ASCII-8BIT
+      string: '{"name": "file_2.txt", "path_lower": "/dropbox_api_fixtures/upload/file_2.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_2.txt", "id": "id:iWFsGCmi1sAAAAAAAAABVQ",
+        "client_modified": "2019-05-31T20:11:34Z", "server_modified": "2019-05-31T20:11:34Z",
+        "rev": "21e576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
+  recorded_at: Fri, 31 May 2019 21:25:31 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -1922,9 +124,9 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_18.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_8.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -1935,33 +137,40 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 429
-      message: too_many_write_operations/..
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '949'
       X-Dropbox-Request-Id:
-      - 589691c0a6aa7a6ab5460a6c8175473b
+      - 42963ad2e9de12d7a034131bfc6c8b3a
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
+      encoding: ASCII-8BIT
+      string: '{"name": "file_8.txt", "path_lower": "/dropbox_api_fixtures/upload/file_8.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_8.txt", "id": "id:iWFsGCmi1sAAAAAAAAABig",
+        "client_modified": "2019-05-31T21:22:55Z", "server_modified": "2019-05-31T21:22:55Z",
+        "rev": "253576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
+  recorded_at: Fri, 31 May 2019 21:25:31 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -1972,7 +181,121 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_9.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '1216'
+      X-Dropbox-Request-Id:
+      - ba2bd0a80023ae2e2b50b8f8cbefade2
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "file_9.txt", "path_lower": "/dropbox_api_fixtures/upload/file_9.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_9.txt", "id": "id:iWFsGCmi1sAAAAAAAAABeA",
+        "client_modified": "2019-05-31T21:18:42Z", "server_modified": "2019-05-31T21:18:42Z",
+        "rev": "241576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:31 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_7.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '1330'
+      X-Dropbox-Request-Id:
+      - cfd17b21cc1d6d13254d6b9bda5f2df3
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "file_7.txt", "path_lower": "/dropbox_api_fixtures/upload/file_7.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_7.txt", "id": "id:iWFsGCmi1sAAAAAAAAABZw",
+        "client_modified": "2019-05-31T20:56:23Z", "server_modified": "2019-05-31T20:56:23Z",
+        "rev": "230576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
       - '{"path":"/dropbox_api_fixtures/upload/file_4.txt"}'
       Content-Type:
@@ -1991,7 +314,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -2003,7 +326,7 @@ http_interactions:
       Content-Security-Policy:
       - sandbox allow-forms allow-scripts
       X-Dropbox-Request-Id:
-      - 5182d0217129bb1eb9365ea73abc6935
+      - 6e82bf1f0e8e666bf4ca50c7db21ed09
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
@@ -2011,7 +334,7 @@ http_interactions:
       string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
         {".tag": "too_many_write_operations"}}}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -2022,7 +345,264 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_5.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: too_many_write_operations/...
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Retry-After:
+      - '1'
+      Content-Security-Policy:
+      - sandbox allow-forms allow-scripts
+      X-Dropbox-Request-Id:
+      - 376747984d44d75128e19f58da11b391
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
+        {".tag": "too_many_write_operations"}}}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_1.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: too_many_write_operations/...
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Retry-After:
+      - '1'
+      Content-Security-Policy:
+      - sandbox allow-forms allow-scripts
+      X-Dropbox-Request-Id:
+      - ad79b340e7e75d60c891ad4c76d44ac1
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
+        {".tag": "too_many_write_operations"}}}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_6.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Server-Response-Time:
+      - '1493'
+      X-Dropbox-Request-Id:
+      - d217813f3ea07cae48de1286acf42514
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name": "file_6.txt", "path_lower": "/dropbox_api_fixtures/upload/file_6.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_6.txt", "id": "id:iWFsGCmi1sAAAAAAAAABUw",
+        "client_modified": "2019-05-31T20:11:33Z", "server_modified": "2019-05-31T20:11:34Z",
+        "rev": "21c576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_14.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: too_many_write_operations/..
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Retry-After:
+      - '1'
+      Content-Security-Policy:
+      - sandbox allow-forms allow-scripts
+      X-Dropbox-Request-Id:
+      - 9ed2e397bcd66d1f862b10c709186f5a
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
+        {".tag": "too_many_write_operations"}}}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
+      Dropbox-Api-Arg:
+      - '{"path":"/dropbox_api_fixtures/upload/file_10.txt"}'
+      Content-Type:
+      - application/octet-stream
+      Content-Length:
+      - '14'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: too_many_write_operations/
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 31 May 2019 21:25:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Retry-After:
+      - '1'
+      Content-Security-Policy:
+      - sandbox allow-forms allow-scripts
+      X-Dropbox-Request-Id:
+      - 75a5a76f847f1ba666c74093981a644a
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
+        {".tag": "too_many_write_operations"}}}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+- request:
+    method: post
+    uri: https://content.dropboxapi.com/2/files/upload
+    body:
+      encoding: UTF-8
+      string: Hello Dropbox!
+    headers:
+      Authorization:
+      - Bearer MOCK_AUTHORIZATION_BEARER
+      User-Agent:
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
       - '{"path":"/dropbox_api_fixtures/upload/file_0.txt"}'
       Content-Type:
@@ -2036,12 +616,12 @@ http_interactions:
   response:
     status:
       code: 429
-      message: too_many_write_operations/
+      message: too_many_write_operations/...
     headers:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -2053,15 +633,15 @@ http_interactions:
       Content-Security-Policy:
       - sandbox allow-forms allow-scripts
       X-Dropbox-Request-Id:
-      - 0de3a2cdf590b25a0f291bfc7dc844a8
+      - 1007dad7b42463190c8cf99d509915a0
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
+      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
         {".tag": "too_many_write_operations"}}}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:13 GMT
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -2072,9 +652,9 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_90.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_13.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -2091,7 +671,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -2103,7 +683,7 @@ http_interactions:
       Content-Security-Policy:
       - sandbox allow-forms allow-scripts
       X-Dropbox-Request-Id:
-      - f8b0d63a0434060402cdb69b6c191607
+      - 8c3e3f9621f3ec928d06af6a12d891b5
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
@@ -2111,7 +691,7 @@ http_interactions:
       string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
         {".tag": "too_many_write_operations"}}}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -2122,9 +702,9 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_85.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_3.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -2141,7 +721,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
+      - Fri, 31 May 2019 21:25:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -2153,7 +733,7 @@ http_interactions:
       Content-Security-Policy:
       - sandbox allow-forms allow-scripts
       X-Dropbox-Request-Id:
-      - 5e8a4f7d453b70adbf8513e748eacbf2
+      - d3e32871f32e24f1adb4d0773365576d
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
@@ -2161,7 +741,7 @@ http_interactions:
       string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
         {".tag": "too_many_write_operations"}}}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
 - request:
     method: post
     uri: https://content.dropboxapi.com/2/files/upload
@@ -2172,809 +752,9 @@ http_interactions:
       Authorization:
       - Bearer MOCK_AUTHORIZATION_BEARER
       User-Agent:
-      - Faraday v0.12.1
+      - Faraday v0.15.4
       Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_25.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 66d5b57a2eb3850605e8cb3257385f02
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_75.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 802397807d46814df2fada26b385e229
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_82.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 22e2940844284c03268fc7db6d45cb27
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_35.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - db3e32e774012f5d393dd135bbc035a5
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_20.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 421e2bb806956be7031bf35bd4935a0f
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_52.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - aba7f7fead6f6399256cf57b35d3cf69
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_79.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 822cd213b034d6bb6c209619cf6d835c
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_39.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - cf4bf164bd4d366f2f3f51efea98216b
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_93.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 81d1a3b8e311860833ec8885ae5fcace
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_30.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 6586eda7e6db952c88984f1e7bca4203
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_22.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - bdcf338298550f90723bfa71b2e33df1
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:14 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_8.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - '0096e0c0ab4169285fabecccf669cee8'
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_6.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - cd27ae377e5a0441a221104613fa2dff
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_67.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 880a4a4de262d07f0fa89ddc6280535d
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_89.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - e204da4338050deaa0909648d3ecb54a
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_2.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - cd6572f2fbec07f252a23969c3a2f549
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_10.txt"}'
+      - '{"path":"/dropbox_api_fixtures/upload/file_11.txt"}'
       Content-Type:
       - application/octet-stream
       Content-Length:
@@ -2991,7 +771,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 22 Jun 2018 14:06:14 GMT
+      - Fri, 31 May 2019 21:25:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -3005,529 +785,18 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Server-Response-Time:
-      - '1872'
+      - '1625'
       X-Dropbox-Request-Id:
-      - b932ff693ea63c27695a7e430d795937
+      - 762fd3a8aaef59402f8c737b3faffcaf
       X-Robots-Tag:
       - noindex, nofollow, noimageindex
     body:
       encoding: ASCII-8BIT
-      string: '{"name": "file_10.txt", "path_lower": "/dropbox_api_fixtures/upload/file_10.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file_10.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA7g",
-        "client_modified": "2018-06-22T14:06:12Z", "server_modified": "2018-06-22T14:06:13Z",
-        "rev": "19b576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
+      string: '{"name": "file_11.txt", "path_lower": "/dropbox_api_fixtures/upload/file_11.txt",
+        "path_display": "/dropbox_api_fixtures/upload/file_11.txt", "id": "id:iWFsGCmi1sAAAAAAAAABdA",
+        "client_modified": "2019-05-31T20:58:31Z", "server_modified": "2019-05-31T20:58:31Z",
+        "rev": "23d576c68d6", "size": 14, "is_downloadable": true, "content_hash":
+        "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
     http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_50.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:14 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache
-      X-Server-Response-Time:
-      - '1611'
-      X-Dropbox-Request-Id:
-      - 4fb88f18849c8f59d3d1b240cb08464b
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: ASCII-8BIT
-      string: '{"name": "file_50.txt", "path_lower": "/dropbox_api_fixtures/upload/file_50.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file_50.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA8A",
-        "client_modified": "2018-06-22T14:06:14Z", "server_modified": "2018-06-22T14:06:14Z",
-        "rev": "19d576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_84.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 9ffae4eb5f44cf0d91da99380ea6b15e
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_31.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 073b88b481dc6836b57cf9da1cb40139
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_86.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/.
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 20bf2aa6c7dad4dfdab75ca1d518611f
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/.", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_83.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/..
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 84d00e75fe1600c0799a893fdf6469b4
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/..", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_56.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - bcfe3a7db1e3c64569bbe5b027e0fb8b
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_70.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - 7ee76ccfe4a12d810bcf5d7d973247f9
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_74.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - cfcfdbd62928fef0c8e39e858f1ead94
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_59.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 429
-      message: too_many_write_operations/...
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:13 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Retry-After:
-      - '1'
-      Content-Security-Policy:
-      - sandbox allow-forms allow-scripts
-      X-Dropbox-Request-Id:
-      - df1987fa1a05e4e9fbc9b89bb16d474d
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: UTF-8
-      string: '{"error_summary": "too_many_write_operations/...", "error": {"reason":
-        {".tag": "too_many_write_operations"}}}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-- request:
-    method: post
-    uri: https://content.dropboxapi.com/2/files/upload
-    body:
-      encoding: UTF-8
-      string: Hello Dropbox!
-    headers:
-      Authorization:
-      - Bearer MOCK_AUTHORIZATION_BEARER
-      User-Agent:
-      - Faraday v0.12.1
-      Dropbox-Api-Arg:
-      - '{"path":"/dropbox_api_fixtures/upload/file_5.txt"}'
-      Content-Type:
-      - application/octet-stream
-      Content-Length:
-      - '14'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Fri, 22 Jun 2018 14:06:14 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-cache
-      X-Server-Response-Time:
-      - '1881'
-      X-Dropbox-Request-Id:
-      - d56be9acc8463a186a79adeb908b5208
-      X-Robots-Tag:
-      - noindex, nofollow, noimageindex
-    body:
-      encoding: ASCII-8BIT
-      string: '{"name": "file_5.txt", "path_lower": "/dropbox_api_fixtures/upload/file_5.txt",
-        "path_display": "/dropbox_api_fixtures/upload/file_5.txt", "id": "id:iWFsGCmi1sAAAAAAAAAA7w",
-        "client_modified": "2018-06-22T14:06:13Z", "server_modified": "2018-06-22T14:06:14Z",
-        "rev": "19c576c68d6", "size": 14, "content_hash": "16dff8700700b9aa627e24bbf832940c084b41ade5c5d6fe5417963a547ed9c2"}'
-    http_version: 
-  recorded_at: Fri, 22 Jun 2018 14:06:15 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 31 May 2019 21:25:32 GMT
+recorded_with: VCR 4.0.0
