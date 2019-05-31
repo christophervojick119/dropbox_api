@@ -38,16 +38,16 @@ API call | Status
 API call | Status
 --- | :---:
 `/copy` | 🌕
-`/copy_batch` | 🌑
-`/copy_batch/check` | 🌑
+`/copy_batch` | 🌕
+`/copy_batch/check` | 🌕
 `/copy_reference/get` | 🌕
 `/copy_reference/save` | 🌕
 `/create_folder` | 🌕
-`/create_folder_batch` | 🌑
-`/create_folder_batch/check` | 🌑
+`/create_folder_batch` | 🌕
+`/create_folder_batch/check` | 🌕
 `/delete` | 🌕
-`/delete_batch` | 🌑
-`/delete_batch/check` | 🌑
+`/delete_batch` | 🌕
+`/delete_batch/check` | 🌕
 `/download` | 🌔
 `/download_zip` | 🌑
 `/get_metadata` | 🌕
@@ -131,7 +131,7 @@ API call | Status
 `/relinquish_folder_membership` | 🌑
 `/remove_file_member_2` | 🌑
 `/remove_folder_member` | 🌑
-`/revoke_shared_link` | 🌑
+`/revoke_shared_link` | 🌕
 `/set_access_inheritance` | 🌑
 `/share_folder` | 🌕
 `/transfer_folder` | 🌑
